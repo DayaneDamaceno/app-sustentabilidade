@@ -29,13 +29,18 @@ type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
 export const QuestionScreen: React.FC<QuestionScreenProps> = ({ route, navigation }) => {
 
   const { currentIndex } = route.params;
+  const [isWrongOption, setIsWrongOption] = useState<boolean>(false);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<Question>();
 
   useEffect(() => {
-    console.log(currentIndex)
-    console.log(questionsDB[currentIndex])
     setQuestions(questionsDB)
+  }, []);
+
+  useEffect(() => {
+    if(questionsDB[currentIndex] == null){
+      navigation.navigate("Complete");
+    }
     setCurrentQuestion(questionsDB[currentIndex])
 
   }, [currentIndex]);

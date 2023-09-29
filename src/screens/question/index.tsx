@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from 'react';
 import {
   View,
   Text,
@@ -7,27 +8,51 @@ import {
   TouchableOpacity,
 } from "react-native";
 
-export const QuestionScreen = () => {
+import questionsDB from  '../../constants/questions.json'
+import { RootStackParamList } from '../../routes';
+import { StackScreenProps } from '@react-navigation/stack';
+
+interface Option{
+  text: string,
+  isCorrect: boolean
+}
+
+interface Question{
+  text: string,
+  options: Option[]
+}
+
+type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
+
+
+
+export const QuestionScreen: React.FC<QuestionScreenProps> = ({ navigation }) => {
+  const [questions, setQuestions] = useState<Question[]>([]);
+  const [currentQuestion, setCurrentQuestion] = useState<Question>();
+
+  useEffect(() => {
+    setQuestions(questionsDB)
+    setCurrentQuestion(questionsDB[0])
+
+  }, []);
+
+  function onChoiceOption(option: Option){
+    if(option.isCorrect)
+      navigation.navigate("Home");
+  }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.count}>Questão 1/10</Text>
+      <Text style={styles.count}>Questão 1/{questions.length}</Text>
       <Text style={styles.question}>
-        Porque usar os recursos de forma inteligente ajuda a manter o equilíbrio
-        do meio ambiente e a não desperdiçar coisas?
+        {currentQuestion?.text}
       </Text>
       <View style={styles.options}>
-        <TouchableOpacity style={styles.option}>
-          <Text>Opção 1</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.option}>
-          <Text>Opção 2</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.option}>
-          <Text>Opção 3</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.option}>
-          <Text>Opção 4</Text>
-        </TouchableOpacity>
+        {currentQuestion?.options.map(option => (
+          <TouchableOpacity style={styles.option} onPress={() => onChoiceOption(option)}>
+            <Text>{option.text}</Text>
+          </TouchableOpacity>
+        ))}
       </View>
     </View>
   );

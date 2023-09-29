@@ -1,0 +1,86 @@
+[
+    {
+        "text": "Porque usar os recursos de forma inteligente ajuda a manter o equilíbrio do meio ambiente e a não desperdiçar coisas?",
+        "options": [
+            {
+                "text": "Opção 1",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 2",
+                "isCorrect": true
+            },
+            {
+                "text": "Opção 3",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 4",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "text": "Pergunta 2?",
+        "options": [
+            {
+                "text": "Opção 1",
+                "isCorrect": true
+            },
+            {
+                "text": "Opção 2",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 3",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 4",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "text": "Pergunta 3?",
+        "options": [
+            {
+                "text": "Opção 1",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 2",
+                "isCorrect": true
+            },
+            {
+                "text": "Opção 3",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 4",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "text": "Pergunta 4?",
+        "options": [
+            {
+                "text": "Opção 1",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 2",
+                "isCorrect": true
+            },
+            {
+                "text": "Opção 3",
+                "isCorrect": false
+            },
+            {
+                "text": "Opção 4",
+                "isCorrect": false
+            }
+        ]
+    }
+]

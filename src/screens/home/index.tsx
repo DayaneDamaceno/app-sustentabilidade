@@ -14,7 +14,7 @@ type HomeScreenProps = StackScreenProps<RootStackParamList, "Home">;
 
 export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   function redirectToQuestion() {
-    navigation.navigate("Question");
+    navigation.navigate("Level");
   }
   return (
     <View style={styles.container}>

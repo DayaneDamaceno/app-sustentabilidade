@@ -26,30 +26,36 @@ type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
 
 
 
-export const QuestionScreen: React.FC<QuestionScreenProps> = ({ navigation }) => {
+export const QuestionScreen: React.FC<QuestionScreenProps> = ({ route, navigation }) => {
+
+  const { currentIndex } = route.params;
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<Question>();
 
   useEffect(() => {
+    console.log(currentIndex)
+    console.log(questionsDB[currentIndex])
     setQuestions(questionsDB)
-    setCurrentQuestion(questionsDB[0])
+    setCurrentQuestion(questionsDB[currentIndex])
 
-  }, []);
+  }, [currentIndex]);
 
   function onChoiceOption(option: Option){
     if(option.isCorrect)
-      navigation.navigate("Home");
+      navigation.navigate("Question", {
+        currentIndex: currentIndex + 1,
+      });
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.count}>Questão 1/{questions.length}</Text>
+      <Text style={styles.count}>Questão {currentIndex + 1}/{questions.length}</Text>
       <Text style={styles.question}>
         {currentQuestion?.text}
       </Text>
       <View style={styles.options}>
-        {currentQuestion?.options.map(option => (
-          <TouchableOpacity style={styles.option} onPress={() => onChoiceOption(option)}>
+        {currentQuestion?.options.map((option, index) => (
+          <TouchableOpacity key={index} style={styles.option} onPress={() => onChoiceOption(option)}>
             <Text>{option.text}</Text>
           </TouchableOpacity>
         ))}

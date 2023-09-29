@@ -6,7 +6,7 @@ import { LevelScreen } from "../screens/level";
 export type RootStackParamList = {
   Home: undefined;
   Level: undefined;
-  Question: undefined;
+  Question: { currentIndex: number};
 };
 
 const Stack = createStackNavigator<RootStackParamList>();

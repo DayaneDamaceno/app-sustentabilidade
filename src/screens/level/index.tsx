@@ -21,7 +21,9 @@ enum Level{
 export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
   function redirectToQuestion(levelSelected: Level) {
     // console.log(levelSelected)
-    navigation.navigate("Question");
+    navigation.navigate("Question", {
+        currentIndex: 0,
+      });
   }
   return (
     <View style={styles.container}>

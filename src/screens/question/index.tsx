@@ -1,70 +1,66 @@
-import React, {useState, useEffect} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Platform,
-  StatusBar,
-  TouchableOpacity,
-} from "react-native";
+import React, { useState, useEffect } from "react";
+import { View, Text, StyleSheet, Platform, StatusBar } from "react-native";
 
-import questionsDB from  '../../constants/questions.json'
-import { RootStackParamList } from '../../routes';
-import { StackScreenProps } from '@react-navigation/stack';
-
-interface Option{
-  text: string,
-  isCorrect: boolean
-}
-
-interface Question{
-  text: string,
-  options: Option[]
-}
+import questionsDB from "../../constants/questions.json";
+import { RootStackParamList } from "../../routes";
+import { StackScreenProps } from "@react-navigation/stack";
+import { Question } from "../../models/question";
+import { Option } from "./components/option";
+import { Answer } from "./components/answer";
 
 type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
 
-
-
-export const QuestionScreen: React.FC<QuestionScreenProps> = ({ route, navigation }) => {
-
-  const { currentIndex } = route.params;
-  const [isWrongOption, setIsWrongOption] = useState<boolean>(false);
+export const QuestionScreen: React.FC<QuestionScreenProps> = ({
+  route,
+  navigation,
+}) => {
+  const { currentIndex, lastAnswerWasCorrect, level } = route.params;
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<Question>();
+  const [showResult, setShowResult] = useState<boolean>();
 
   useEffect(() => {
-    setQuestions(questionsDB)
-  }, []);
+    const levelQuestions = questionsDB.filter((x) => x.level === level)[0]
+      .questions;
+    setQuestions(levelQuestions);
 
-  useEffect(() => {
-    if(questionsDB[currentIndex] == null){
-      navigation.navigate("Complete");
-    }
-    setCurrentQuestion(questionsDB[currentIndex])
-
+    setCurrentQuestion(levelQuestions[currentIndex]);
+    console.log("com current");
+    setShowResult(currentIndex !== 0);
   }, [currentIndex]);
 
-  function onChoiceOption(option: Option){
-    if(option.isCorrect)
-      navigation.navigate("Question", {
-        currentIndex: currentIndex + 1,
-      });
+  function handleOnNext() {
+    setShowResult(false);
+    if (questionsDB[currentIndex] == null) navigation.navigate("Complete");
   }
 
   return (
     <View style={styles.container}>
-      <Text style={styles.count}>Questão {currentIndex + 1}/{questions.length}</Text>
-      <Text style={styles.question}>
-        {currentQuestion?.text}
-      </Text>
-      <View style={styles.options}>
-        {currentQuestion?.options.map((option, index) => (
-          <TouchableOpacity key={index} style={styles.option} onPress={() => onChoiceOption(option)}>
-            <Text>{option.text}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
+      {showResult && (
+        <Answer
+          lastAnswerWasCorrect={lastAnswerWasCorrect}
+          onNext={handleOnNext}
+        />
+      )}
+
+      {!showResult && (
+        <>
+          <Text style={styles.count}>
+            Questão {currentIndex + 1}/{questions.length}
+          </Text>
+          <Text style={styles.question}>{currentQuestion?.text}</Text>
+          <View style={styles.options}>
+            {currentQuestion?.options.map((option, index) => (
+              <Option
+                key={index}
+                currentIndex={currentIndex}
+                option={option}
+                level={level}
+              />
+            ))}
+          </View>
+        </>
+      )}
     </View>
   );
 };

@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "app-sustentabilidade",
+    "slug": "app-sustentabilidade",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.day04.appsustentabilidade"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.day04.appsustentabilidade"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+    // "extra": {
+    //   "eas": {
+    //     "projectId": "8bdadd02-4785-4050-9530-4106ec2972fd"
+    //   }
+    // },
+    // "owner": "day04"
+  }
+}

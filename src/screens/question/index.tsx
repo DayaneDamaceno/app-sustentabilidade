@@ -1,86 +1,81 @@
-import React, {useState, useEffect} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Platform,
-  StatusBar,
-  TouchableOpacity,
-} from "react-native";
+import React, { useState, useEffect } from "react";
+import { View, Text, StyleSheet, Platform, StatusBar } from "react-native";
 
-import questionsDB from  '../../constants/questions.json'
-import { RootStackParamList } from '../../routes';
-import { StackScreenProps } from '@react-navigation/stack';
-import { LinearGradient } from "expo-linear-gradient"
-
-interface Option{
-  text: string,
-  isCorrect: boolean
-}
-
-interface Question{
-  text: string,
-  options: Option[]
-}
+import questionsDB from "../../constants/questions.json";
+import { RootStackParamList } from "../../routes";
+import { StackScreenProps } from "@react-navigation/stack";
+import { Question } from "../../models/question";
+import { Option } from "./components/option";
+import { Answer } from "./components/answer";
+import { LinearGradient } from "expo-linear-gradient";
 
 type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
 
-
-
-export const QuestionScreen: React.FC<QuestionScreenProps> = ({ route, navigation }) => {
-
-  const { currentIndex } = route.params;
-  const [isWrongOption, setIsWrongOption] = useState<boolean>(false);
+export const QuestionScreen: React.FC<QuestionScreenProps> = ({
+  route,
+  navigation,
+}) => {
+  const { currentIndex, lastAnswerWasCorrect, level } = route.params;
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<Question>();
+  const [showResult, setShowResult] = useState<boolean>();
 
   useEffect(() => {
-    setQuestions(questionsDB)
-  }, []);
+    const levelQuestions = questionsDB.filter((x) => x.level === level)[0]
+      .questions;
+    setQuestions(levelQuestions);
 
-  useEffect(() => {
-    if(questionsDB[currentIndex] == null){
-      navigation.navigate("Complete");
-    }
-    setCurrentQuestion(questionsDB[currentIndex])
-
+    setCurrentQuestion(levelQuestions[currentIndex]);
+    setShowResult(currentIndex !== 0);
   }, [currentIndex]);
 
-  function onChoiceOption(option: Option){
-    if(option.isCorrect)
-      navigation.navigate("Question", {
-        currentIndex: currentIndex + 1,
-      });
+  function handleOnNext() {
+    setShowResult(false);
+    if (questionsDB[currentIndex] == null) navigation.navigate("Complete");
   }
 
   return (
     <View style={styles.container}>
-      <View style={styles.header}>
-      <LinearGradient
-        colors={["#49B805", "#B2FF50"]}
-        style={[styles.header, styles.shadowProp]}>
+      {showResult && (
+        <Answer
+          lastAnswerWasCorrect={lastAnswerWasCorrect}
+          onNext={handleOnNext}
+        />
+      )}
 
-      <Text style={styles.textTitle}>Questão {currentIndex + 1}/{questions.length}</Text>
-      <Text style={styles.textQuestion}>
-        {currentQuestion?.text}
-      </Text>
+      {!showResult && (
+        <>
+          <View style={styles.header}>
+            <LinearGradient
+              colors={["#49B805", "#B2FF50"]}
+              style={[styles.header, styles.shadowProp]}
+            >
+              <Text style={styles.textTitle}>
+                Questão {currentIndex + 1}/{questions.length}
+              </Text>
+              <Text style={styles.textQuestion}>{currentQuestion?.text}</Text>
+            </LinearGradient>
+          </View>
 
-      </LinearGradient>
-      </View>
-      <View style={styles.options}>
-        {currentQuestion?.options.map((option, index) => (
-          <TouchableOpacity key={index} style={styles.button} onPress={() => onChoiceOption(option)}>
-            <Text style={styles.text}>{option.text}</Text>
-          </TouchableOpacity>
-        ))}
-      </View>
+          <View style={styles.options}>
+            {currentQuestion?.options.map((option, index) => (
+              <Option
+                key={index}
+                currentIndex={currentIndex}
+                option={option}
+                level={level}
+              />
+            ))}
+          </View>
+        </>
+      )}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#EBFFDF',
+    backgroundColor: "#EBFFDF",
     flex: 1,
     gap: 24,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
@@ -106,30 +101,21 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     paddingVertical: 24,
   },
-  button: {
-    backgroundColor: "#72D423",
-    borderRadius: 20,
-    width: 300,
-    height: 75,
-    alignItems: 'center',
-    marginBottom: -20,
-    marginTop: 30,
-    marginLeft: 50,
-  },
+
   textTitle: {
     fontSize: 40,
-    fontStyle: 'normal',
-    color: 'white',
-    alignSelf: 'center',
+    fontStyle: "normal",
+    color: "white",
+    alignSelf: "center",
     marginTop: 40,
   },
 
   textQuestion: {
-    fontFamily: 'Roboto',
+    fontFamily: "Roboto",
     fontSize: 20,
-    fontStyle: 'normal',
-    color: 'white',
-    alignSelf: 'center',
+    fontStyle: "normal",
+    color: "white",
+    alignSelf: "center",
     marginTop: 40,
     margin: 20,
   },
@@ -142,7 +128,7 @@ const styles = StyleSheet.create({
   },
   shadowProp: {
     borderWidth: 4,
-    borderColor: 'black',
+    borderColor: "black",
     borderRadius: 30,
   },
 

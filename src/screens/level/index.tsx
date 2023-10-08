@@ -9,32 +9,36 @@ import {
 } from "react-native";
 import { RootStackParamList } from "../../routes";
 import { Ionicons } from "@expo/vector-icons";
+import { Level } from "../../models/level";
 
 type LevelScreenProps = StackScreenProps<RootStackParamList, "Level">;
 
-enum Level{
-    Easy,
-    Medium,
-    Hard
-}
-
 export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
   function redirectToQuestion(levelSelected: Level) {
-    // console.log(levelSelected)
     navigation.navigate("Question", {
-        currentIndex: 0,
-      });
+      level: levelSelected,
+      currentIndex: 0,
+    });
   }
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Selecione um nivel</Text>
-      <TouchableOpacity style={styles.start} onPress={() => redirectToQuestion(Level.Easy)}>
+      <TouchableOpacity
+        style={styles.start}
+        onPress={() => redirectToQuestion(Level.Easy)}
+      >
         <Text>Facil</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.start} onPress={() => redirectToQuestion(Level.Medium)}>
+      <TouchableOpacity
+        style={styles.start}
+        onPress={() => redirectToQuestion(Level.Medium)}
+      >
         <Text>Médio</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.start} onPress={() => redirectToQuestion(Level.Hard)}>
+      <TouchableOpacity
+        style={styles.start}
+        onPress={() => redirectToQuestion(Level.Hard)}
+      >
         <Text>Dificil</Text>
       </TouchableOpacity>
     </View>

@@ -15,23 +15,32 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
   route,
   navigation,
 }) => {
+  const numberOfQuestions = 10;
   const { currentIndex, lastAnswerWasCorrect, level } = route.params;
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<Question>();
   const [showResult, setShowResult] = useState<boolean>();
 
   useEffect(() => {
-    const levelQuestions = questionsDB.filter((x) => x.level === level)[0]
-      .questions;
-    setQuestions(levelQuestions);
+    if (questions.length === 0) {
+      const levelQuestions = questionsDB.filter((x) => x.level === level)[0]
+        .questions;
+      const tenRandomQuestions = getRandomQuestions(
+        levelQuestions,
+        numberOfQuestions
+      );
+      setQuestions(() => [...tenRandomQuestions]);
+    }
+  }, []);
 
-    setCurrentQuestion(levelQuestions[currentIndex]);
+  useEffect(() => {
+    setCurrentQuestion(questions[currentIndex]);
     setShowResult(currentIndex !== 0);
-  }, [currentIndex]);
+  }, [questions, currentIndex]);
 
   function handleOnNext() {
     setShowResult(false);
-    if (questionsDB[currentIndex] == null) navigation.navigate("Complete");
+    if (questions[currentIndex] == null) navigation.navigate("Complete");
   }
 
   return (
@@ -127,10 +136,26 @@ const styles = StyleSheet.create({
   },
   elevation: {
     elevation: 40,
-    shadowColor: 'black',
-    shadowRadius: 20, 
+    shadowColor: "black",
+    shadowRadius: 20,
     shadowOpacity: 0.5,
   },
 
   text: { color: "white", fontSize: 20, marginTop: 20 },
 });
+
+function getRandomQuestions(arr: Question[], amount: number) {
+  if (amount >= arr.length) {
+    return arr.slice();
+  }
+
+  const questionsSelected: Question[] = [];
+  const copyArray = arr.slice();
+
+  for (let i = 0; i < amount; i++) {
+    const randomIndex = Math.floor(Math.random() * copyArray.length);
+    questionsSelected.push(copyArray.splice(randomIndex, 1)[0]);
+  }
+
+  return questionsSelected;
+}

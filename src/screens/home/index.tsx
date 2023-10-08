@@ -18,7 +18,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Bem vindo</Text>
+      <Text style={styles.header}>Bem vindo!</Text>
       <TouchableOpacity style={styles.start} onPress={redirectToQuestion}>
         <Text>Iniciar</Text>
       </TouchableOpacity>
@@ -28,7 +28,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#FFF",
+    backgroundColor: "#EBFFDF",
     flex: 1,
     gap: 24,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
@@ -36,13 +36,27 @@ const styles = StyleSheet.create({
   },
   header: {
     marginTop: 120,
-    fontSize: 28,
+    fontSize: 50,
     textAlign: "center",
   },
   start: {
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    borderRadius: 50,
+    backgroundColor: "#BDFF95",
+    borderRadius: 20,
     paddingVertical: 24,
+    borderTopColor: "#000000",
+    borderWidth: 3,
+  },
+  next: {
+    alignItems: "center",
+    backgroundColor: "#BDFF95",
+    borderRadius: 20,
+    paddingVertical: 24,
+    width: 320,
+    height: 80,
+    marginLeft: 30,
+    marginTop: 200,
+    borderTopColor: "#000000",
+    borderWidth: 3,
   },
 });

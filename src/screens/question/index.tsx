@@ -48,7 +48,7 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
           <View style={styles.header}>
             <LinearGradient
               colors={["#49B805", "#B2FF50"]}
-              style={[styles.header, styles.shadowProp]}
+              style={[styles.header, styles.elevation]}
             >
               <Text style={styles.textTitle}>
                 Questão {currentIndex + 1}/{questions.length}
@@ -111,7 +111,6 @@ const styles = StyleSheet.create({
   },
 
   textQuestion: {
-    fontFamily: "Roboto",
     fontSize: 20,
     fontStyle: "normal",
     color: "white",
@@ -120,16 +119,17 @@ const styles = StyleSheet.create({
     margin: 20,
   },
   header: {
-    width: 405,
+    width: 392,
     height: 300,
     borderRadius: 12,
     padding: 0,
-    marginLeft: -3,
+    marginLeft: 0.5,
   },
-  shadowProp: {
-    borderWidth: 4,
-    borderColor: "black",
-    borderRadius: 30,
+  elevation: {
+    elevation: 40,
+    shadowColor: 'black',
+    shadowRadius: 20, 
+    shadowOpacity: 0.5,
   },
 
   text: { color: "white", fontSize: 20, marginTop: 20 },

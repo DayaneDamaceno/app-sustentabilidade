@@ -12,7 +12,7 @@ export const Answer: React.FC<AnswerProps> = ({
 }) => {
   return (
     <>
-      <Text style={styles.text}>
+      <Text style={[styles.text, styles.header]}>
         {lastAnswerWasCorrect ? "Muito bom!!" : "Vamos melhorar"}
       </Text>
       <Text style={styles.text}>
@@ -21,7 +21,7 @@ export const Answer: React.FC<AnswerProps> = ({
           : "Juntos podemos salvar o planeta!"}
       </Text>
       <TouchableOpacity style={styles.next} onPress={onNext}>
-        <Text>Continuar</Text>
+        <Text style={styles.button}>Continue</Text>
       </TouchableOpacity>
     </>
   );
@@ -29,13 +29,30 @@ export const Answer: React.FC<AnswerProps> = ({
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 28,
+    fontSize: 20,
     textAlign: "center",
+    marginTop: 30,
   },
   next: {
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    borderRadius: 50,
+    backgroundColor: "#BDFF95",
+    borderRadius: 20,
     paddingVertical: 24,
+    width: 320,
+    height: 80,
+    marginLeft: 30,
+    marginTop: 200,
+    borderTopColor: "#000000",
+    borderWidth: 3,
+  },
+  header: {
+    marginTop: 90,
+    fontWeight: "bold",
+    fontSize: 35,
+    textAlign: "center"
+  },
+  button: {
+    fontWeight: "bold",
+    fontSize: 20,
   },
 });

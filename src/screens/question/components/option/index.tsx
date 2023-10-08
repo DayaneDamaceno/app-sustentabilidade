@@ -34,7 +34,7 @@ export const Option: React.FC<OptionProps> = (props) => {
   return (
     <>
       <TouchableOpacity style={styles.button} onPress={onChoiceOption}>
-        <Text>{props.option.text}</Text>
+        <Text style={styles.text} >{props.option.text}</Text>
       </TouchableOpacity>
     </>
   );
@@ -44,11 +44,10 @@ const styles = StyleSheet.create({
   button: {
     backgroundColor: "#72D423",
     borderRadius: 20,
-    width: 300,
+    width: 350,
     height: 75,
     alignItems: "center",
-    marginBottom: -20,
-    marginTop: 30,
-    marginLeft: 50,
+    marginLeft: 20,
   },
+  text: { color: "white", fontSize: 15, marginTop: 20 },
 });

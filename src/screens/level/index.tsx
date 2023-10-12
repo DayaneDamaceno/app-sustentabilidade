@@ -22,46 +22,77 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
   }
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Selecione um nivel</Text>
-      <TouchableOpacity
-        style={styles.start}
-        onPress={() => redirectToQuestion(Level.Easy)}
-      >
-        <Text>Facil</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.start}
-        onPress={() => redirectToQuestion(Level.Medium)}
-      >
-        <Text>Médio</Text>
-      </TouchableOpacity>
-      <TouchableOpacity
-        style={styles.start}
-        onPress={() => redirectToQuestion(Level.Hard)}
-      >
-        <Text>Dificil</Text>
-      </TouchableOpacity>
+      <View style={styles.centeredContainer}>
+        <Text style={styles.header}>Modo de Jogo</Text>
+        <View style={styles.buttonBox}>
+          <TouchableOpacity
+            style={[styles.start, styles.greenButton]}
+            onPress={() => redirectToQuestion(Level.Easy)}
+          >
+            <Text>Fácil</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonBox}>
+          <TouchableOpacity
+            style={[styles.start, styles.yellowButton]}
+            onPress={() => redirectToQuestion(Level.Medium)}
+          >
+            <Text>Médio</Text>
+          </TouchableOpacity>
+        </View>
+        <View style={styles.buttonBox}>
+          <TouchableOpacity
+            style={[styles.start, styles.redButton]}
+            onPress={() => redirectToQuestion(Level.Hard)}
+          >
+            <Text>Difícil</Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#FFF",
+    backgroundColor: "#EBFFDF",
     flex: 1,
-    gap: 24,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
     paddingHorizontal: 24,
+    justifyContent: "center",
+  },
+  centeredContainer: {
+    backgroundColor: "#BDFF95",
+    borderRadius: 20,
+    borderWidth: 3,
+    borderColor: "#000000",
+    padding: 24,
+    alignItems: "center",
   },
   header: {
-    marginTop: 120,
-    fontSize: 28,
+    fontSize: 40,
     textAlign: "center",
+  },
+  buttonBox: {
+    width: "100%",
+    marginTop: 12,
   },
   start: {
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    borderRadius: 50,
     paddingVertical: 24,
+    borderRadius: 20,
+  },
+  greenButton: {
+    backgroundColor: "#98FF98",
+  },
+  yellowButton: {
+    backgroundColor: "yellow",
+  },
+  redButton: {
+    backgroundColor: "lightcoral",
+  },
+  startButtonText: {
+    fontSize: 20,
+    fontWeight: "bold",
   },
 });

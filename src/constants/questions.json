@@ -15,304 +15,829 @@
           },
           {
             "text": "Água de rios",
-            "isCorrect": true
+            "isCorrect": false
           },
           {
             "text": "Água de poços profundos",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "O que é um vazamento de água?",
+        "options": [
+          {
+            "text": "Um rio transbordando",
+            "isCorrect": false
+          },
+          {
+            "text": "Um desperdício de água",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma enchente repentina",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo natural",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 2?",
+        "text": "O que podemos fazer para ajudar a conservar a água em nossa comunidade?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Deixar as torneiras abertas o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Usar água quente para lavar louça",
+            "isCorrect": false
+          },
+          {
+            "text": "Reparar vazamentos imediatamente",
             "isCorrect": true
           },
           {
-            "text": "Opção 2",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Encher a banheira até o topo",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 3?",
+        "text": "Qual é uma forma de reutilizar a água em casa?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Deixar a torneira aberta enquanto escovamos os dentes",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Descartar a água usada da máquina de lavar",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Utilizar água da chuva para regar as plantas",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Deixar a torneira pingando o dia todo",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 4?",
+        "text": "O que é a captação de água da chuva?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Captura de peixes em um lago",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Utilização de água do mar para beber",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Coleta e armazenamento de água da chuva para uso futuro",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Despejo de água tratada em rios",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 5?",
+        "text": "Como a poluição da água afeta os animais aquáticos?",
         "options": [
           {
-            "text": "Opção 1",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 2",
+            "text": "Não tem impacto nos animais aquáticos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Melhora a saúde dos animais aquáticos",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Pode causar doenças e morte nos animais aquáticos",
+            "isCorrect": false
+          },
+          {
+            "text": "Torna os animais mais resistentes à poluição",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 6?",
+        "text": "Qual é a importância da água subterrânea?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem importância para a vida na Terra",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "É usada apenas para esportes aquáticos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "É uma fonte essencial de água potável e para a irrigação",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Pode ser descartada sem preocupações",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 7?",
+        "text": "O que é reciclagem?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Descartar resíduos em qualquer lugar",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Transformar resíduos em novos produtos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Queimar resíduos para gerar calor",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Deixar resíduos acumularem em casa",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 8?",
+        "text": "Qual é um exemplo de material que pode ser reciclado?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Vidro, papel e plástico",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Alimentos orgânicos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Papel higiênico usado",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Pilhas e baterias",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 9?",
+        "text": "O que significa a seta de reciclagem encontrada em muitos produtos?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não pode ser reciclado",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Deve ser queimado",
+            "isCorrect": false
+          },
+          {
+            "text": "Pode ser reciclado",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "É prejudicial ao meio ambiente",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 10?",
+        "text": "O que devemos fazer antes de colocar um item de plástico para reciclar?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Lavar e secar o plástico",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Deixar o plástico sujo",
+            "isCorrect": false
+          },
+          {
+            "text": "Quebrar o plástico em pedaços pequenos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Pintar o plástico com cores brilhantes",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 11?",
+        "text": "Qual é a importância da reciclagem para o meio ambiente?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem impacto no meio ambiente",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Ajuda a reduzir a poluição e o desperdício",
+            "isCorrect": false
+          },
+          {
+            "text": "Aumenta a poluição do ar",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Causa a extinção de espécies",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 12?",
+        "text": "Qual é a finalidade da reciclagem de papel?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Produzir mais lixo",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Reduzir a quantidade de papel disponível",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Aumentar o corte de árvores",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Criar novas árvores",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 13?",
+        "text": "O que são os 3Rs da sustentabilidade?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Rejeitar, Reutilizar, Reciclar",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Recriar, Reparar, Reduzir",
+            "isCorrect": false
+          },
+          {
+            "text": "Recolher, Reutilizar, Recolocar",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Rasgar, Remover, Ressaltar",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 14?",
+        "text": "Por que a reciclagem é importante para economizar recursos naturais?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem impacto na economia de recursos naturais",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Reduz a quantidade de lixo nos aterros",
+            "isCorrect": false
+          },
+          {
+            "text": "Aumenta a extração de recursos naturais",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Causa o esgotamento dos recursos naturais",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 15?",
+        "text": "Qual é o objetivo da reciclagem de alumínio?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Aumentar a poluição do solo",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Criar joias",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzir a necessidade de mineração de bauxita",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Fazer novos plásticos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o impacto da reciclagem na redução das emissões de gases de efeito estufa?",
+        "options": [
+          {
+            "text": "Aumenta as emissões de gases de efeito estufa",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Não tem impacto nas emissões",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a reduzir as emissões, pois requer menos produção de materiais virgens",
+            "isCorrect": true
+          },
+          {
+            "text": "Causa o derretimento das calotas polares",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um aterro sanitário?",
+        "options": [
+          {
+            "text": "Um local para cultivar alimentos",
+            "isCorrect": false
+          },
+          {
+            "text": "Um local para armazenar resíduos a céu aberto",
+            "isCorrect": true
+          },
+          {
+            "text": "Um local onde resíduos são queimados",
+            "isCorrect": false
+          },
+          {
+            "text": "Um local projetado para o descarte seguro e controlado de resíduos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o problema comum associado ao descarte inadequado de resíduos plásticos nos oceanos?",
+        "options": [
+          {
+            "text": "Criação de habitats para vida marinha",
+            "isCorrect": false
+          },
+          {
+            "text": "Aumento da biodiversidade",
+            "isCorrect": false
+          },
+          {
+            "text": "Poluição dos oceanos e ameaça à vida marinha",
+            "isCorrect": true
+          },
+          {
+            "text": "Melhoria na qualidade da água do mar",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é lixo eletrônico?",
+        "options": [
+          {
+            "text": "Resíduos orgânicos",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos de alimentos",
+            "isCorrect": true
+          },
+          {
+            "text": "Equipamentos eletrônicos descartados, como celulares e computadores",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos de construção",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o impacto da queima de resíduos sólidos a céu aberto na qualidade do ar?",
+        "options": [
+          {
+            "text": "Melhora a qualidade do ar",
+            "isCorrect": false
+          },
+          {
+            "text": "Não tem impacto na qualidade do ar",
+            "isCorrect": false
+          },
+          {
+            "text": "Piora a qualidade do ar devido à liberação de poluentes tóxicos",
+            "isCorrect": true
+          },
+          {
+            "text": "Aumenta a quantidade de oxigênio no ar",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o impacto da disposição inadequada de resíduos perigosos?",
+        "options": [
+          {
+            "text": "Não tem impacto na saúde humana",
+            "isCorrect": false
+          },
+          {
+            "text": "Pode causar contaminação do solo e da água, representando riscos à saúde humana",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a limpar o ambiente",
+            "isCorrect": true
+          },
+          {
+            "text": "Aumenta a fertilidade do solo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são resíduos orgânicos?",
+        "options": [
+          {
+            "text": "Resíduos feitos de plástico",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos que não se decompõem",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos de materiais naturais, como alimentos e folhas",
+            "isCorrect": true
+          },
+          {
+            "text": "Resíduos feitos de metal",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é descarte irregular de resíduos?",
+        "options": [
+          {
+            "text": "Descarte de resíduos em locais apropriados",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos no oceano",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos em locais inadequados, como vias públicas e terrenos baldios",
+            "isCorrect": true
+          },
+          {
+            "text": "Transformação de resíduos em novos produtos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é a incineração de resíduos?",
+        "options": [
+          {
+            "text": "Transformação de resíduos em adubo",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos em aterros",
+            "isCorrect": false
+          },
+          {
+            "text": "Queima de resíduos para reduzir o volume e gerar energia",
+            "isCorrect": true
+          },
+          {
+            "text": "Separação de resíduos para reciclagem",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um resíduo tóxico?",
+        "options": [
+          {
+            "text": "Um resíduo que não causa danos à saúde humana",
+            "isCorrect": false
+          },
+          {
+            "text": "Um resíduo que brilha no escuro",
+            "isCorrect": true
+          },
+          {
+            "text": "Um resíduo que não precisa de cuidados especiais",
+            "isCorrect": false
+          },
+          {
+            "text": "Um resíduo que pode causar danos à saúde humana e ao meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos reduzir a quantidade de resíduos produzidos?",
+        "options": [
+          {
+            "text": "Aumentando o consumo de produtos descartáveis",
+            "isCorrect": false
+          },
+          {
+            "text": "Não fazendo nada, pois é impossível reduzir resíduos",
+            "isCorrect": false
+          },
+          {
+            "text": "Comprando produtos em grandes quantidades",
+            "isCorrect": true
+          },
+          {
+            "text": "Optando por produtos duráveis, reutilizáveis e evitando excesso de embalagens",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é o descarte de resíduos radioativos?",
+        "options": [
+          {
+            "text": "Descarte de resíduos no oceano",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos em aterros",
+            "isCorrect": false
+          },
+          {
+            "text": "Processo de tratamento e armazenamento seguro de resíduos que emitem radiações perigosas",
+            "isCorrect": true
+          },
+          {
+            "text": "Transformação de resíduos em energia",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é a ideia por trás de 'reduzir, reutilizar, reciclar'?",
+        "options": [
+          {
+            "text": "Jogar tudo fora",
+            "isCorrect": false
+          },
+          {
+            "text": "Transformar tudo em brinquedos",
+            "isCorrect": false
+          },
+          {
+            "text": "Não fazer nada com os materiais",
+            "isCorrect": true
+          },
+          {
+            "text": "Usar coisas por mais tempo, usar novamente e transformar em algo novo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que a economia circular é importante para o planeta?",
+        "options": [
+          {
+            "text": "Não é importante",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a salvar dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a cuidar do meio ambiente, usando menos recursos e criando menos lixo",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com o planeta",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a economia circular pode nos ajudar a ter um mundo mais limpo?",
+        "options": [
+          {
+            "text": "Fazendo mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Comprando muitos brinquedos novos",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando as coisas de novo e transformando em novas coisas, para não jogar no lixo",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com a limpeza",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são 'produtos duráveis' na economia circular?",
+        "options": [
+          {
+            "text": "Produtos que quebram logo e não podem ser consertados",
+            "isCorrect": false
+          },
+          {
+            "text": "Produtos que podem ser usados várias vezes e consertados quando estragam",
+            "isCorrect": true
+          },
+          {
+            "text": "Produtos que são feitos de plástico novo",
+            "isCorrect": false
+          },
+          {
+            "text": "Produtos que não podem ser reutilizados",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a economia circular pode nos ajudar a economizar dinheiro?",
+        "options": [
+          {
+            "text": "Comprando tudo novo",
+            "isCorrect": false
+          },
+          {
+            "text": "Reutilizando coisas em vez de comprar novas e jogar fora",
+            "isCorrect": false
+          },
+          {
+            "text": "Não economiza dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Gastando muito dinheiro em brinquedos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a reciclagem ajuda na economia circular?",
+        "options": [
+          {
+            "text": "Não ajuda",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazendo mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Transformando coisas antigas em novas coisas e evitando desperdício",
+            "isCorrect": true
+          },
+          {
+            "text": "Jogando mais coisas fora",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é 'logística circular' na economia circular?",
+        "options": [
+          {
+            "text": "Uma forma de brincar de corre-corre",
+            "isCorrect": false
+          },
+          {
+            "text": "Um jeito de entregar comida",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo de transporte eficiente para levar coisas de um lugar para outro e aproveitar melhor os recursos",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com a economia circular",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma 'oficina de conserto' na economia circular?",
+        "options": [
+          {
+            "text": "Um lugar para guardar coisas velhas",
+            "isCorrect": false
+          },
+          {
+            "text": "Um lugar para jogar lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Um lugar onde as coisas quebradas podem ser consertadas e usadas de novo",
+            "isCorrect": true
+          },
+          {
+            "text": "Um lugar onde não se faz nada",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é 'remanufatura'?",
+        "options": [
+          {
+            "text": "Um tipo de brincadeira",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo de produção tradicional",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo de reforma e restauração de produtos usados para que funcionem como novos",
+            "isCorrect": true
+          },
+          {
+            "text": "Um processo de fazer coisas novas a partir de materiais virgens",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos ajudar a promover a economia circular em casa?",
+        "options": [
+          {
+            "text": "Comprando muitas coisas novas o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Jogando tudo fora",
+            "isCorrect": false
+          },
+          {
+            "text": "Reutilizando coisas, reciclando materiais e evitando desperdício",
+            "isCorrect": true
+          },
+          {
+            "text": "Não fazendo nada",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que devemos cuidar dos recursos naturais na economia circular?",
+        "options": [
+          {
+            "text": "Não precisamos cuidar dos recursos naturais",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque os recursos são infinitos",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque usar os recursos de forma inteligente ajuda a manter o equilíbrio do meio ambiente e a não desperdiçar coisas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a economia circular pode tornar o mundo um lugar melhor?",
+        "options": [
+          {
+            "text": "Não pode",
+            "isCorrect": false
+          },
+          {
+            "text": "Criando mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajudando a cuidar do meio ambiente, usar os recursos de forma inteligente e criar menos desperdício",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com tornar o mundo melhor",
             "isCorrect": false
           }
         ]
@@ -344,295 +869,2164 @@
         ]
       },
       {
-        "text": "Pergunta 2?",
+        "text": "O que é um vazamento de água?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Um rio transbordando",
+            "isCorrect": false
+          },
+          {
+            "text": "Um desperdício de água",
             "isCorrect": true
           },
           {
-            "text": "Opção 2",
+            "text": "Uma enchente repentina",
             "isCorrect": false
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Um processo natural",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 3?",
+        "text": "O que podemos fazer para ajudar a conservar a água em nossa comunidade?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Deixar as torneiras abertas o tempo todo",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Usar água quente para lavar louça",
+            "isCorrect": false
+          },
+          {
+            "text": "Reparar vazamentos imediatamente",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Encher a banheira até o topo",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 4?",
+        "text": "Qual é uma forma de reutilizar a água em casa?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Deixar a torneira aberta enquanto escovamos os dentes",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Descartar a água usada da máquina de lavar",
+            "isCorrect": false
+          },
+          {
+            "text": "Utilizar água da chuva para regar as plantas",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Deixar a torneira pingando o dia todo",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 5?",
+        "text": "O que é a captação de água da chuva?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Captura de peixes em um lago",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Utilização de água do mar para beber",
+            "isCorrect": false
+          },
+          {
+            "text": "Coleta e armazenamento de água da chuva para uso futuro",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Despejo de água tratada em rios",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 6?",
+        "text": "Como a poluição da água afeta os animais aquáticos?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem impacto nos animais aquáticos",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Melhora a saúde dos animais aquáticos",
+            "isCorrect": false
+          },
+          {
+            "text": "Pode causar doenças e morte nos animais aquáticos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Torna os animais mais resistentes à poluição",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 7?",
+        "text": "Qual é a importância da água subterrânea?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem importância para a vida na Terra",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "É usada apenas para esportes aquáticos",
+            "isCorrect": false
+          },
+          {
+            "text": "É uma fonte essencial de água potável e para a irrigação",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Pode ser descartada sem preocupações",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 8?",
+        "text": "O que é reciclagem?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Descartar resíduos em qualquer lugar",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
-            "isCorrect": true
-          },
-          {
-            "text": "Opção 3",
+            "text": "Transformar resíduos em novos produtos",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Queimar resíduos para gerar calor",
+            "isCorrect": false
+          },
+          {
+            "text": "Deixar resíduos acumularem em casa",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 9?",
+        "text": "Qual é um exemplo de material que pode ser reciclado?",
         "options": [
           {
-            "text": "Opção 1",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 2",
+            "text": "Vidro, papel e plástico",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Alimentos orgânicos",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Papel higiênico usado",
+            "isCorrect": false
+          },
+          {
+            "text": "Pilhas e baterias",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 10?",
+        "text": "O que significa a seta de reciclagem encontrada em muitos produtos?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não pode ser reciclado",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Deve ser queimado",
+            "isCorrect": false
+          },
+          {
+            "text": "Pode ser reciclado",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "É prejudicial ao meio ambiente",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 11?",
+        "text": "O que devemos fazer antes de colocar um item de plástico para reciclar?",
         "options": [
           {
-            "text": "Opção 1",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 2",
+            "text": "Lavar e secar o plástico",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Deixar o plástico sujo",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Quebrar o plástico em pedaços pequenos",
+            "isCorrect": false
+          },
+          {
+            "text": "Pintar o plástico com cores brilhantes",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 12?",
+        "text": "Qual é a importância da reciclagem para o meio ambiente?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem impacto no meio ambiente",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Ajuda a reduzir a poluição e o desperdício",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Aumenta a poluição do ar",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Causa a extinção de espécies",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 13?",
+        "text": "Qual é a finalidade da reciclagem de papel?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Produzir mais lixo",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Reduzir a quantidade de papel disponível",
+            "isCorrect": false
+          },
+          {
+            "text": "Aumentar o corte de árvores",
+            "isCorrect": false
+          },
+          {
+            "text": "Criar novas árvores",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "O que são os 3Rs da sustentabilidade?",
+        "options": [
+          {
+            "text": "Rejeitar, Reutilizar, Reciclar",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Recriar, Reparar, Reduzir",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Recolher, Reutilizar, Recolocar",
+            "isCorrect": false
+          },
+          {
+            "text": "Rasgar, Remover, Ressaltar",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 14?",
+        "text": "Por que a reciclagem é importante para economizar recursos naturais?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não tem impacto na economia de recursos naturais",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Reduz a quantidade de lixo nos aterros",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Aumenta a extração de recursos naturais",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Causa o esgotamento dos recursos naturais",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 15?",
+        "text": "Qual é o objetivo da reciclagem de alumínio?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Aumentar a poluição do solo",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Criar joias",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzir a necessidade de mineração de bauxita",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Fazer novos plásticos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o impacto da reciclagem na redução das emissões de gases de efeito estufa?",
+        "options": [
+          {
+            "text": "Aumenta as emissões de gases de efeito estufa",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Não tem impacto nas emissões",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a reduzir as emissões, pois requer menos produção de materiais virgens",
+            "isCorrect": true
+          },
+          {
+            "text": "Causa o derretimento das calotas polares",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um aterro sanitário?",
+        "options": [
+          {
+            "text": "Um local para cultivar alimentos",
+            "isCorrect": false
+          },
+          {
+            "text": "Um local para armazenar resíduos a céu aberto",
+            "isCorrect": false
+          },
+          {
+            "text": "Um local onde resíduos são queimados",
+            "isCorrect": false
+          },
+          {
+            "text": "Um local projetado para o descarte seguro e controlado de resíduos",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Qual é o problema comum associado ao descarte inadequado de resíduos plásticos nos oceanos?",
+        "options": [
+          {
+            "text": "Criação de habitats para vida marinha",
+            "isCorrect": false
+          },
+          {
+            "text": "Aumento da biodiversidade",
+            "isCorrect": false
+          },
+          {
+            "text": "Poluição dos oceanos e ameaça à vida marinha",
+            "isCorrect": true
+          },
+          {
+            "text": "Melhoria na qualidade da água do mar",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é lixo eletrônico?",
+        "options": [
+          {
+            "text": "Resíduos orgânicos",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos de alimentos",
+            "isCorrect": false
+          },
+          {
+            "text": "Equipamentos eletrônicos descartados, como celulares e computadores",
+            "isCorrect": true
+          },
+          {
+            "text": "Resíduos de construção",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o impacto da queima de resíduos sólidos a céu aberto na qualidade do ar?",
+        "options": [
+          {
+            "text": "Melhora a qualidade do ar",
+            "isCorrect": false
+          },
+          {
+            "text": "Não tem impacto na qualidade do ar",
+            "isCorrect": false
+          },
+          {
+            "text": "Piora a qualidade do ar devido à liberação de poluentes tóxicos",
+            "isCorrect": true
+          },
+          {
+            "text": "Aumenta a quantidade de oxigênio no ar",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o impacto da disposição inadequada de resíduos perigosos?",
+        "options": [
+          {
+            "text": "Não tem impacto na saúde humana",
+            "isCorrect": false
+          },
+          {
+            "text": "Pode causar contaminação do solo e da água, representando riscos à saúde humana",
+            "isCorrect": true
+          },
+          {
+            "text": "Ajuda a limpar o ambiente",
+            "isCorrect": false
+          },
+          {
+            "text": "Aumenta a fertilidade do solo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são resíduos orgânicos?",
+        "options": [
+          {
+            "text": "Resíduos feitos de plástico",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos que não se decompõem",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos de materiais naturais, como alimentos e folhas",
+            "isCorrect": false
+          },
+          {
+            "text": "Resíduos feitos de metal",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é descarte irregular de resíduos?",
+        "options": [
+          {
+            "text": "Descarte de resíduos em locais apropriados",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos no oceano",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos em locais inadequados, como vias públicas e terrenos baldios",
+            "isCorrect": true
+          },
+          {
+            "text": "Transformação de resíduos em novos produtos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é a incineração de resíduos?",
+        "options": [
+          {
+            "text": "Transformação de resíduos em adubo",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos em aterros",
+            "isCorrect": false
+          },
+          {
+            "text": "Queima de resíduos para reduzir o volume e gerar energia",
+            "isCorrect": true
+          },
+          {
+            "text": "Separação de resíduos para reciclagem",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um resíduo tóxico?",
+        "options": [
+          {
+            "text": "Um resíduo que não causa danos à saúde humana",
+            "isCorrect": false
+          },
+          {
+            "text": "Um resíduo que brilha no escuro",
+            "isCorrect": false
+          },
+          {
+            "text": "Um resíduo que não precisa de cuidados especiais",
+            "isCorrect": false
+          },
+          {
+            "text": "Um resíduo que pode causar danos à saúde humana e ao meio ambiente",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Como podemos reduzir a quantidade de resíduos produzidos?",
+        "options": [
+          {
+            "text": "Aumentando o consumo de produtos descartáveis",
+            "isCorrect": false
+          },
+          {
+            "text": "Não fazendo nada, pois é impossível reduzir resíduos",
+            "isCorrect": false
+          },
+          {
+            "text": "Comprando produtos em grandes quantidades",
+            "isCorrect": false
+          },
+          {
+            "text": "Optando por produtos duráveis, reutilizáveis e evitando excesso de embalagens",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "O que é o descarte de resíduos radioativos?",
+        "options": [
+          {
+            "text": "Descarte de resíduos no oceano",
+            "isCorrect": false
+          },
+          {
+            "text": "Descarte de resíduos em aterros",
+            "isCorrect": false
+          },
+          {
+            "text": "Processo de tratamento e armazenamento seguro de resíduos que emitem radiações perigosas",
+            "isCorrect": true
+          },
+          {
+            "text": "Transformação de resíduos em energia",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é a ideia por trás de reduzir, reutilizar e reciclar ?",
+        "options": [
+          {
+            "text": "Jogar tudo fora",
+            "isCorrect": false
+          },
+          {
+            "text": "Transformar tudo em brinquedos",
+            "isCorrect": false
+          },
+          {
+            "text": "Não fazer nada com os materiais",
+            "isCorrect": false
+          },
+          {
+            "text": "Usar coisas por mais tempo, usar novamente e transformar em algo novo",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Por que a economia circular é importante para o planeta?",
+        "options": [
+          {
+            "text": "Não é importante",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a salvar dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a cuidar do meio ambiente, usando menos recursos e criando menos lixo",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com o planeta",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a economia circular pode nos ajudar a ter um mundo mais limpo?",
+        "options": [
+          {
+            "text": "Fazendo mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Comprando muitos brinquedos novos",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando as coisas de novo e transformando em novas coisas, para não jogar no lixo",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com a limpeza",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são produtos duráveis na economia circular?",
+        "options": [
+          {
+            "text": "Produtos que quebram logo e não podem ser consertados",
+            "isCorrect": false
+          },
+          {
+            "text": "Produtos que podem ser usados várias vezes e consertados quando estragam",
+            "isCorrect": true
+          },
+          {
+            "text": "Produtos que são feitos de plástico novo",
+            "isCorrect": false
+          },
+          {
+            "text": "Produtos que não podem ser reutilizados",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a economia circular pode nos ajudar a economizar dinheiro?",
+        "options": [
+          {
+            "text": "Comprando tudo novo",
+            "isCorrect": false
+          },
+          {
+            "text": "Reutilizando coisas em vez de comprar novas e jogar fora",
+            "isCorrect": true
+          },
+          {
+            "text": "Não economiza dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Gastando muito dinheiro em brinquedos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a reciclagem ajuda na economia circular?",
+        "options": [
+          {
+            "text": "Não ajuda",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazendo mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Transformando coisas antigas em novas coisas e evitando desperdício",
+            "isCorrect": true
+          },
+          {
+            "text": "Jogando mais coisas fora",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é logística circular na economia circular?",
+        "options": [
+          {
+            "text": "Uma forma de brincar de corre-corre",
+            "isCorrect": false
+          },
+          {
+            "text": "Um jeito de entregar comida",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo de transporte eficiente para levar coisas de um lugar para outro e aproveitar melhor os recursos",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com a economia circular",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma oficina de conserto na economia circular?",
+        "options": [
+          {
+            "text": "Um lugar para guardar coisas velhas",
+            "isCorrect": false
+          },
+          {
+            "text": "Um lugar para jogar lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Um lugar onde as coisas quebradas podem ser consertadas e usadas de novo",
+            "isCorrect": true
+          },
+          {
+            "text": "Um lugar onde não se faz nada",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é remanufatura?",
+        "options": [
+          {
+            "text": "Um tipo de brincadeira",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo de produção tradicional",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo de reforma e restauração de produtos usados para que funcionem como novos",
+            "isCorrect": true
+          },
+          {
+            "text": "Um processo de fazer coisas novas a partir de materiais virgens",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos ajudar a promover a economia circular em casa?",
+        "options": [
+          {
+            "text": "Comprando muitas coisas novas o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Jogando tudo fora",
+            "isCorrect": false
+          },
+          {
+            "text": "Reutilizando coisas, reciclando materiais e evitando desperdício",
+            "isCorrect": true
+          },
+          {
+            "text": "Não fazendo nada",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que devemos cuidar dos recursos naturais na economia circular?",
+        "options": [
+          {
+            "text": "Não precisamos cuidar dos recursos naturais",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque os recursos são infinitos",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque usar os recursos de forma inteligente ajuda a manter o equilíbrio do meio ambiente e a não desperdiçar coisas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a economia circular pode tornar o mundo um lugar melhor?",
+        "options": [
+          {
+            "text": "Não pode",
+            "isCorrect": false
+          },
+          {
+            "text": "Criando mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajudando a cuidar do meio ambiente, usar os recursos de forma inteligente e criar menos desperdício",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com tornar o mundo melhor",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um exemplo de energia renovável?",
+        "options": [
+          {
+            "text": "Energia que nunca acaba",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que só pode ser usada durante o dia",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem do sol, vento, água e outras fontes naturais que nunca acabam",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia que é usada em grandes fábricas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um exemplo de energia não renovável?",
+        "options": [
+          {
+            "text": "Energia que é gerada pelo movimento das pessoas",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que é gerada pelo riso das crianças",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem do sol e do vento",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem do petróleo, carvão e gás natural, que podem acabar um dia",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "O que é um standby em aparelhos eletrônicos?",
+        "options": [
+          {
+            "text": "Uma forma de dançar",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma luzinha que nunca se apaga",
+            "isCorrect": false
+          },
+          {
+            "text": "Um modo em que o aparelho continua consumindo energia mesmo quando não estamos usando",
+            "isCorrect": true
+          },
+          {
+            "text": "Um botão mágico que liga e desliga a energia",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos economizar energia ao usar o computador?",
+        "options": [
+          {
+            "text": "Deixar o computador ligado o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Desligar o computador quando não estamos usando ou usar o modo de hibernação",
+            "isCorrect": true
+          },
+          {
+            "text": "Deixar a tela brilhando o máximo possível",
+            "isCorrect": false
+          },
+          {
+            "text": "Não usar o computador",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um termostato em um aparelho de ar condicionado?",
+        "options": [
+          {
+            "text": "Um botão para ligar e desligar o ar condicionado",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sensor de temperatura que ajusta automaticamente o ar condicionado",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma luzinha que indica se o ar condicionado está ligado",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma peça que faz barulho no ar condicionado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos economizar energia ao lavar roupas?",
+        "options": [
+          {
+            "text": "Usando a máquina de lavar todos os dias",
+            "isCorrect": false
+          },
+          {
+            "text": "Limpando a máquina de lavar com frequência",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando a máquina de lavar com carga completa e em temperaturas mais baixas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não lavando roupas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é energia eólica?",
+        "options": [
+          {
+            "text": "Energia que vem do vento e é usada para girar moinhos",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia que vem do arco-íris",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem das estrelas",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que é usada para acender lanternas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um temporizador em um aparelho eletrônico?",
+        "options": [
+          {
+            "text": "Uma pessoa que controla o aparelho",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma máquina que conserta aparelhos",
+            "isCorrect": false
+          },
+          {
+            "text": "Um dispositivo que desliga automaticamente o aparelho após um certo tempo",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma luzinha que pisca",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é energia hidrelétrica?",
+        "options": [
+          {
+            "text": "Energia que vem do hidrogênio",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem da água em movimento, como em rios e cachoeiras",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia que vem dos peixes",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que é usada para carregar baterias",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos economizar energia ao usar o ar condicionado?",
+        "options": [
+          {
+            "text": "Deixando o ar condicionado ligado o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando o ar condicionado na temperatura máxima o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando o ar condicionado com moderação e ajustando a temperatura para não ficar muito frio",
+            "isCorrect": true
+          },
+          {
+            "text": "Não usando o ar condicionado",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é uma boa maneira de ter uma alimentação saudável?",
+        "options": [
+          {
+            "text": "Comer apenas fast food",
+            "isCorrect": false
+          },
+          {
+            "text": "Comer apenas uma vez por dia",
+            "isCorrect": false
+          },
+          {
+            "text": "Comer uma variedade de frutas, vegetais, proteínas e grãos inteiros",
+            "isCorrect": true
+          },
+          {
+            "text": "Não comer nada após o café da manhã",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são alimentos processados?",
+        "options": [
+          {
+            "text": "Alimentos que crescem na natureza",
+            "isCorrect": false
+          },
+          {
+            "text": "Alimentos feitos em fábricas, que passam por várias etapas de produção",
+            "isCorrect": true
+          },
+          {
+            "text": "Alimentos que vêm de outros países",
+            "isCorrect": false
+          },
+          {
+            "text": "Alimentos que não têm nutrientes",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma porção de comida?",
+        "options": [
+          {
+            "text": "A quantidade de comida que cabe em uma colher",
+            "isCorrect": false
+          },
+          {
+            "text": "A quantidade de comida que podemos comer de uma vez só",
+            "isCorrect": false
+          },
+          {
+            "text": "A quantidade de comida recomendada para uma refeição, que varia de acordo com o alimento",
+            "isCorrect": true
+          },
+          {
+            "text": "A quantidade de comida que precisamos comer em um dia inteiro",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Quais são os grupos de alimentos que devemos incluir em nossa alimentação?",
+        "options": [
+          {
+            "text": "Apenas doces e biscoitos",
+            "isCorrect": false
+          },
+          {
+            "text": "Apenas vegetais",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma variedade de frutas, vegetais, proteínas, grãos inteiros e laticínios",
+            "isCorrect": true
+          },
+          {
+            "text": "Apenas carne e batata",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma dieta balanceada?",
+        "options": [
+          {
+            "text": "Uma dieta que inclui apenas um tipo de alimento",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma dieta que não inclui frutas e vegetais",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma dieta que inclui uma variedade de alimentos de forma equilibrada para obter todos os nutrientes necessários",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma dieta que não tem relação com a saúde",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é fibra alimentar?",
+        "options": [
+          {
+            "text": "Alimentos feitos de plástico",
+            "isCorrect": false
+          },
+          {
+            "text": "Alimentos que têm muito açúcar",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma substância encontrada em alimentos vegetais que ajuda na digestão e previne problemas intestinais",
+            "isCorrect": true
+          },
+          {
+            "text": "Alimentos que não têm sabor",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que devemos evitar o consumo excessivo de açúcar?",
+        "options": [
+          {
+            "text": "Porque o açúcar é a única coisa que podemos comer",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque o açúcar faz a comida ficar mais gostosa",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque o açúcar em excesso pode causar problemas de saúde, como cáries, ganho de peso e diabetes",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque o açúcar não tem sabor",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma refeição equilibrada?",
+        "options": [
+          {
+            "text": "Uma refeição feita apenas de carne",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma refeição que não inclui vegetais",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma refeição que inclui uma variedade de alimentos dos diferentes grupos para garantir a ingestão de nutrientes",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma refeição que não tem relação com a saúde",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um nutriente?",
+        "options": [
+          {
+            "text": "Um tipo de brinquedo",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma substância encontrada apenas em doces",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma substância essencial para o funcionamento adequado do corpo, como vitaminas, minerais e proteínas",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma substância que não tem relação com a saúde",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a alimentação saudável pode ajudar no crescimento e desenvolvimento?",
+        "options": [
+          {
+            "text": "Não pode ajudar",
+            "isCorrect": false
+          },
+          {
+            "text": "Faz as pessoas encolherem",
+            "isCorrect": false
+          },
+          {
+            "text": "Fornece os nutrientes necessários para o corpo crescer, desenvolver músculos, ossos e manter a energia",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com o crescimento",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um alimento integral?",
+        "options": [
+          {
+            "text": "Um alimento feito apenas de açúcar",
+            "isCorrect": false
+          },
+          {
+            "text": "Um alimento que não tem sabor",
+            "isCorrect": false
+          },
+          {
+            "text": "Um alimento que é feito de grãos inteiros e é mais nutritivo do que os alimentos refinados",
+            "isCorrect": true
+          },
+          {
+            "text": "Um alimento que não tem nutrientes",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como podemos fazer escolhas alimentares saudáveis ao comer fora de casa?",
+        "options": [
+          {
+            "text": "Escolhendo sempre os alimentos mais gordurosos e calóricos",
+            "isCorrect": false
+          },
+          {
+            "text": "Não comendo nada",
+            "isCorrect": false
+          },
+          {
+            "text": "Escolhendo opções que incluam vegetais, proteínas magras e grãos inteiros",
+            "isCorrect": true
+          },
+          {
+            "text": "Não importa o que comemos quando estamos fora",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é a relação entre alimentação saudável e energia?",
+        "options": [
+          {
+            "text": "Não há relação",
+            "isCorrect": false
+          },
+          {
+            "text": "Comer saudavelmente deixa as pessoas sem energia",
+            "isCorrect": false
+          },
+          {
+            "text": "Alimentação saudável fornece a energia necessária para o corpo funcionar bem e realizar atividades",
+            "isCorrect": true
+          },
+          {
+            "text": "Alimentação saudável não tem impacto na energia do corpo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que é importante evitar o consumo excessivo de alimentos gordurosos?",
+        "options": [
+          {
+            "text": "Porque os alimentos gordurosos são os mais saborosos",
+            "isCorrect": false
+          },
+          {
+            "text": "Não é importante, podemos comer alimentos gordurosos o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque o consumo excessivo de gorduras pode levar a problemas de saúde, como ganho de peso e doenças do coração",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque os alimentos gordurosos não têm nutrientes",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são energias renováveis?",
+        "options": [
+          {
+            "text": "Energias que nunca podem ser usadas",
+            "isCorrect": false
+          },
+          {
+            "text": "Energias que vêm dos raios do sol",
+            "isCorrect": false
+          },
+          {
+            "text": "Energias que vêm da chuva",
+            "isCorrect": false
+          },
+          {
+            "text": "Energias que vêm de fontes naturais que nunca acabam, como sol, vento e água",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Qual é uma fonte de energia renovável que vem do sol?",
+        "options": [
+          {
+            "text": "Energia do vento",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia geotérmica",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia solar",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia do carvão",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são painéis solares?",
+        "options": [
+          {
+            "text": "Painéis que são usados para jogar futebol",
+            "isCorrect": false
+          },
+          {
+            "text": "Painéis que geram eletricidade a partir do vento",
+            "isCorrect": false
+          },
+          {
+            "text": "Painéis que absorvem a energia do sol e a transformam em eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Painéis que são usados para fazer desenhos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a energia do vento é capturada?",
+        "options": [
+          {
+            "text": "Usando ventiladores gigantes",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando pipas",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando turbinas eólicas que giram com o vento e geram eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Usando balões de ar quente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma usina hidrelétrica?",
+        "options": [
+          {
+            "text": "Uma usina que produz hidrogênio",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma usina que produz água",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma usina que transforma o vento em eletricidade",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma usina que usa a força da água em movimento para gerar eletricidade",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "O que é energia geotérmica?",
+        "options": [
+          {
+            "text": "Energia que vem da geada",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem dos raios",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem do calor da Terra, aproveitando o calor do interior do planeta para gerar eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia que vem do gelo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como as energias renováveis ajudam a proteger o meio ambiente?",
+        "options": [
+          {
+            "text": "Não ajudam",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem o meio ambiente ficar mais poluído",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzem a emissão de poluentes e gases de efeito estufa, ajudando a diminuir o aquecimento global",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é uma forma de transporte sustentável?",
+        "options": [
+          {
+            "text": "Montar em um unicórnio",
+            "isCorrect": false
+          },
+          {
+            "text": "Andar de bicicleta",
+            "isCorrect": false
+          },
+          {
+            "text": "Andar de helicóptero",
+            "isCorrect": false
+          },
+          {
+            "text": "Andar de tanque de guerra",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como andar de bicicleta pode ser uma forma sustentável de locomoção?",
+        "options": [
+          {
+            "text": "Não pode ser sustentável",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque as bicicletas são mais bonitas",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque não emitem poluentes e são boas para a saúde e o meio ambiente",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque as bicicletas têm rodas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é carona solidária?",
+        "options": [
+          {
+            "text": "Fazer uma carona em um carro de corrida",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazer carona com estranhos",
+            "isCorrect": false
+          },
+          {
+            "text": "Compartilhar o carro com outras pessoas que vão na mesma direção",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazer carona com um elefante",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que é importante usar o transporte público?",
+        "options": [
+          {
+            "text": "Não é importante, podemos usar carros o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais barato do que ter um carro próprio",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque reduz o número de carros nas estradas, diminuindo a poluição e o trânsito",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um veículo elétrico?",
+        "options": [
+          {
+            "text": "Um veículo movido a pedais",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que usa apenas energia solar",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que usa eletricidade em vez de combustíveis fósseis",
+            "isCorrect": true
+          },
+          {
+            "text": "Um veículo que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é compartilhamento de carro?",
+        "options": [
+          {
+            "text": "Compartilhar o carro com pessoas que você não conhece",
+            "isCorrect": false
+          },
+          {
+            "text": "Ter muitos carros",
+            "isCorrect": false
+          },
+          {
+            "text": "Compartilhar o carro com amigos ou vizinhos para reduzir o número de veículos nas estradas",
+            "isCorrect": false
+          },
+          {
+            "text": "Compartilhar carros com animais",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como o compartilhamento de carro pode ser uma forma de mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Não pode ser sustentável",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais barato do que ter um carro próprio",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque reduz a quantidade de carros nas estradas, diminuindo a poluição e o trânsito",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é a importância de usar meios de transporte mais sustentáveis, como caminhar e andar de bicicleta?",
+        "options": [
+          {
+            "text": "Não é importante, podemos usar carros o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a gastar mais dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a reduzir a poluição do ar e a melhorar a saúde das pessoas, além de evitar congestionamentos",
+            "isCorrect": false
+          },
+          {
+            "text": "Não tem relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um sistema de transporte público?",
+        "options": [
+          {
+            "text": "Um sistema que transporta apenas celebridades",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sistema que transporta apenas animais",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sistema de transporte compartilhado por muitas pessoas, como ônibus, metrô e trem",
+            "isCorrect": true
+          },
+          {
+            "text": "Um sistema que não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é a importância de planejar viagens e rotas de forma eficiente?",
+        "options": [
+          {
+            "text": "Não é importante",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a gastar mais dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a economizar tempo e reduzir o tráfego nas estradas, diminuindo a poluição e o estresse",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com o tráfego",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que é importante reduzir o uso de plástico?",
+        "options": [
+          {
+            "text": "Não é importante, o plástico é ótimo",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque o plástico é bonito",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque o plástico pode causar poluição e prejudicar o meio ambiente e a vida animal",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque o plástico não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é bioplástico?",
+        "options": [
+          {
+            "text": "Plástico feito de biscoitos",
+            "isCorrect": false
+          },
+          {
+            "text": "Plástico feito apenas de resíduos de plantas",
+            "isCorrect": false
+          },
+          {
+            "text": "Plástico feito de materiais biodegradáveis, como amido de milho, que se decompõe mais facilmente na natureza",
+            "isCorrect": true
+          },
+          {
+            "text": "Plástico que não se decompõe",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um plástico de uso único?",
+        "options": [
+          {
+            "text": "Plástico que pode ser usado muitas vezes",
+            "isCorrect": false
+          },
+          {
+            "text": "Plástico que não pode ser usado",
+            "isCorrect": false
+          },
+          {
+            "text": "Plástico que é projetado para ser usado apenas uma vez e depois descartado",
+            "isCorrect": true
+          },
+          {
+            "text": "Plástico que nunca acaba",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é decomposição?",
+        "options": [
+          {
+            "text": "É quando coisas ficam mais bonitas",
+            "isCorrect": false
+          },
+          {
+            "text": "É quando coisas se tornam mágicas",
+            "isCorrect": false
+          },
+          {
+            "text": "É o processo em que materiais se quebram e se transformam em substâncias naturais ao longo do tempo",
+            "isCorrect": true
+          },
+          {
+            "text": "Não é um processo real",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a redução do uso de plástico pode ajudar a proteger os animais?",
+        "options": [
+          {
+            "text": "Não pode ajudar",
+            "isCorrect": false
+          },
+          {
+            "text": "Faz as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzindo a quantidade de plástico nos ambientes naturais, evitando que os animais se machuquem ou comam plástico",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com os animais",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um poluente?",
+        "options": [
+          {
+            "text": "Uma pessoa que ajuda o meio ambiente",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma substância que não faz mal",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma substância que polui e causa danos ao meio ambiente e à saúde",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma substância que é boa para o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma compostagem?",
+        "options": [
+          {
+            "text": "Um tipo de sopa",
+            "isCorrect": false
+          },
+          {
+            "text": "Um tipo de dança",
+            "isCorrect": false
+          },
+          {
+            "text": "Um processo em que materiais orgânicos, como restos de comida, se decompõem naturalmente e viram adubo",
+            "isCorrect": true
+          },
+          {
+            "text": "Um processo que não existe",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como as embalagens de plástico podem ser reduzidas?",
+        "options": [
+          {
+            "text": "Usando muitas embalagens de plástico",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando apenas embalagens de plástico",
+            "isCorrect": false
+          },
+          {
+            "text": "Optando por produtos com menos embalagens ou embalagens feitas de materiais mais sustentáveis, como papel ou vidro",
+            "isCorrect": true
+          },
+          {
+            "text": "Não usando embalagens",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como as crianças podem ajudar na redução do uso de plástico?",
+        "options": [
+          {
+            "text": "Não podem ajudar",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Educando outras pessoas, usando menos plástico e encorajando práticas mais sustentáveis",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um recipiente reutilizável?",
+        "options": [
+          {
+            "text": "Um recipiente que não pode ser usado novamente",
+            "isCorrect": false
+          },
+          {
+            "text": "Um recipiente quebrado",
+            "isCorrect": false
+          },
+          {
+            "text": "Um recipiente que pode ser usado várias vezes para transportar comida ou bebida, reduzindo a necessidade de embalagens descartáveis",
+            "isCorrect": true
+          },
+          {
+            "text": "Um recipiente que é jogado fora após o uso",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como o uso de produtos feitos de plástico biodegradável pode ser benéfico?",
+        "options": [
+          {
+            "text": "Não pode ser benéfico",
+            "isCorrect": false
+          },
+          {
+            "text": "Torna o plástico mais colorido",
+            "isCorrect": false
+          },
+          {
+            "text": "Eles se decompõem mais rapidamente na natureza, causando menos impacto ambiental",
+            "isCorrect": true
+          },
+          {
+            "text": "Eles não têm relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um plástico biodegradável?",
+        "options": [
+          {
+            "text": "Plástico que se transforma em bichinhos",
+            "isCorrect": false
+          },
+          {
+            "text": "Plástico que não existe",
+            "isCorrect": false
+          },
+          {
+            "text": "Plástico que se decompõe mais facilmente na natureza ao longo do tempo",
+            "isCorrect": true
+          },
+          {
+            "text": "Plástico que não se decompõe",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a bicicleta pode ser uma forma sustentável de locomoção?",
+        "options": [
+          {
+            "text": "Não pode ser sustentável",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais divertido do que andar de carro",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque não emite poluentes e é boa para a saúde e o meio ambiente",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque as bicicletas têm rodas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é carona solidária?",
+        "options": [
+          {
+            "text": "Fazer carona com desconhecidos",
+            "isCorrect": false
+          },
+          {
+            "text": "Viajar sozinho",
+            "isCorrect": false
+          },
+          {
+            "text": "Compartilhar o carro com amigos ou colegas de trabalho que têm o mesmo destino",
+            "isCorrect": true
+          },
+          {
+            "text": "Fazer carona com animais",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que é importante usar o transporte público?",
+        "options": [
+          {
+            "text": "Não é importante, podemos usar carros o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais caro do que ter um carro próprio",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque reduz a quantidade de carros nas ruas, diminuindo a poluição e o congestionamento",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um veículo elétrico?",
+        "options": [
+          {
+            "text": "Um veículo movido a bateria",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que funciona apenas durante o dia",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que usa eletricidade em vez de combustíveis fósseis",
+            "isCorrect": true
+          },
+          {
+            "text": "Um veículo que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como os veículos elétricos contribuem para a mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Não contribuem",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzindo a emissão de poluentes e gases de efeito estufa, ajudando a combater a poluição do ar e as mudanças climáticas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é compartilhamento de carro?",
+        "options": [
+          {
+            "text": "Fazer carona com desconhecidos",
+            "isCorrect": false
+          },
+          {
+            "text": "Ter muitos carros",
+            "isCorrect": false
+          },
+          {
+            "text": "Compartilhar o carro com outras pessoas que têm trajetos semelhantes, diminuindo a quantidade de veículos nas ruas",
+            "isCorrect": true
+          },
+          {
+            "text": "Compartilhar o carro com animais",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um veículo a gás natural?",
+        "options": [
+          {
+            "text": "Um veículo movido a gases de planetas distantes",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que usa apenas gás de cozinha como combustível",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que utiliza gás natural como combustível em vez de gasolina ou diesel",
+            "isCorrect": true
+          },
+          {
+            "text": "Um veículo que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como os veículos a gás natural podem ser uma opção sustentável?",
+        "options": [
+          {
+            "text": "Não podem ser sustentáveis",
+            "isCorrect": false
+          },
+          {
+            "text": "Tornam o ar mais poluído",
+            "isCorrect": false
+          },
+          {
+            "text": "Eles emitem menos poluentes nocivos do que os veículos movidos a gasolina ou diesel",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é a importância de usar meios de transporte mais sustentáveis, como caminhar e andar de bicicleta?",
+        "options": [
+          {
+            "text": "Não é importante, podemos usar carros o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a gastar mais dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a reduzir a poluição do ar e a melhorar a saúde das pessoas, além de diminuir o congestionamento",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um sistema de transporte público?",
+        "options": [
+          {
+            "text": "Um sistema que transporta apenas celebridades",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sistema que transporta apenas animais",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sistema de transporte compartilhado por muitas pessoas, como ônibus, metrô e trem",
+            "isCorrect": true
+          },
+          {
+            "text": "Um sistema que não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que é importante planejar viagens e rotas de forma eficiente?",
+        "options": [
+          {
+            "text": "Não é importante",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a gastar mais dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Ajuda a economizar tempo e reduzir o tráfego nas ruas, diminuindo a poluição e o estresse",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem relação com o tráfego",
             "isCorrect": false
           }
         ]
@@ -643,316 +3037,1114 @@
     "level": "hard",
     "questions": [
       {
-        "text": "Qual é a principal fonte de água potável para a maioria das pessoas?",
+        "text": "Qual é a importância das zonas úmidas para a saúde dos ecossistemas aquáticos?",
         "options": [
           {
-            "text": "Água do mar",
+            "text": "Não têm importância",
             "isCorrect": false
           },
           {
-            "text": "Água da chuva",
+            "text": "Aumentam a poluição da água",
             "isCorrect": false
           },
           {
-            "text": "Água de rios",
+            "text": "Fornecem habitat para vida selvagem aquática",
             "isCorrect": true
           },
           {
-            "text": "Água de poços profundos",
+            "text": "Atrapalham o fluxo natural da água",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 2?",
+        "text": "Qual é a principal causa da escassez de água em algumas regiões?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Excesso de chuvas",
+            "isCorrect": false
+          },
+          {
+            "text": "Uso sustentável dos recursos hídricos",
+            "isCorrect": false
+          },
+          {
+            "text": "Poluição da água",
             "isCorrect": true
           },
           {
-            "text": "Opção 2",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Falta de rios e lagos",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 3?",
+        "text": "O que é um 'afluentes' de um rio?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Um tipo de peixe",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "O ponto onde o rio deságua no oceano",
+            "isCorrect": false
+          },
+          {
+            "text": "Riachos e córregos que alimentam um rio maior",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Uma pequena ilha no meio do rio",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 4?",
+        "text": "Como a agricultura pode afetar a qualidade da água dos rios?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Melhora a qualidade da água",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Não tem impacto na qualidade da água",
+            "isCorrect": false
+          },
+          {
+            "text": "Pode causar erosão do solo e poluição da água com pesticidas",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Torna a água mais pura",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 5?",
+        "text": "Qual é a importância das árvores perto de corpos d'água?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Não têm importância",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Aumentam a erosão do solo",
+            "isCorrect": false
+          },
+          {
+            "text": "Fornecem sombra para os nadadores",
+            "isCorrect": false
+          },
+          {
+            "text": "Mantêm a qualidade da água, reduzindo a poluição",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "Qual é o papel das zonas de recarga em um aquífero?",
+        "options": [
+          {
+            "text": "Aumentar a poluição da água subterrânea",
+            "isCorrect": false
+          },
+          {
+            "text": "Armazenar água para uso imediato",
+            "isCorrect": false
+          },
+          {
+            "text": "Recarregar as reservas subterrâneas de água",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Aquecer a água subterrânea",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 6?",
+        "text": "O que é uma barragem?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Um tipo de peixe",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Uma barreira construída em rios para bloquear a passagem da água",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Um método de coleta de água da chuva",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Um tipo de pássaro aquático",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 7?",
+        "text": "Como podemos reduzir a poluição da água proveniente de produtos químicos domésticos?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Jogar produtos químicos no vaso sanitário",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Descartar produtos químicos em corpos d'água",
+            "isCorrect": false
+          },
+          {
+            "text": "Utilizar produtos químicos de forma moderada e descartá-los adequadamente",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Deixar os produtos químicos ao ar livre",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 8?",
+        "text": "O que é a compostagem?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Reciclagem de plástico",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Processo de transformar resíduos orgânicos em adubo",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Queima de resíduos para gerar energia",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Transformação de vidro em novos produtos",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 9?",
+        "text": "Qual é a melhor opção para lidar com um produto eletrônico antigo?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Descartar no lixo comum",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Deixar na rua",
+            "isCorrect": false
+          },
+          {
+            "text": "Reciclar em um centro de eletrônicos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Enterrá-lo no jardim",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 10?",
+        "text": "O que é upcycling?",
         "options": [
           {
-            "text": "Opção 1",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 2",
+            "text": "Transformar materiais recicláveis em novos produtos",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Despejar resíduos em corpos d'água",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Queimar lixo para gerar eletricidade",
+            "isCorrect": false
+          },
+          {
+            "text": "Descartar resíduos no oceano",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 11?",
+        "text": "O que são produtos biodegradáveis?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Produtos que nunca se decompõem",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Produtos feitos de plástico",
+            "isCorrect": false
+          },
+          {
+            "text": "Produtos que se decompõem naturalmente com o tempo",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Produtos feitos de vidro",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 12?",
+        "text": "O que é um resíduo biodegradável?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Um resíduo que nunca se decompõe",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Um resíduo que se decompõe rapidamente na natureza",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Um resíduo que não pode ser queimado",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Um resíduo que brilha no escuro",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 13?",
+        "text": "O que é compostagem?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Queima de resíduos",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Descarte de resíduos no oceano",
+            "isCorrect": false
+          },
+          {
+            "text": "Processo de decomposição de resíduos orgânicos em adubo",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
-            "isCorrect": false
-          },
-          {
-            "text": "Opção 4",
+            "text": "Armazenamento de resíduos em aterros",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 14?",
+        "text": "Qual é o papel dos aterros sanitários no gerenciamento de resíduos?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Queimar resíduos para gerar energia",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Armazenar resíduos de maneira segura e controlada",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Transformar resíduos em adubo",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Lançar resíduos no mar",
             "isCorrect": false
           }
         ]
       },
       {
-        "text": "Pergunta 15?",
+        "text": "O que é a logística reversa?",
         "options": [
           {
-            "text": "Opção 1",
+            "text": "Descarte de resíduos no meio ambiente",
             "isCorrect": false
           },
           {
-            "text": "Opção 2",
+            "text": "Processo de coleta e retorno de resíduos pós-consumo ao fabricante para reciclagem ou descarte adequado",
             "isCorrect": true
           },
           {
-            "text": "Opção 3",
+            "text": "Queima de resíduos para gerar calor",
             "isCorrect": false
           },
           {
-            "text": "Opção 4",
+            "text": "Transformação de resíduos em novos produtos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é economia circular?",
+        "options": [
+          {
+            "text": "Um modelo econômico que só usa círculos em vez de retas",
+            "isCorrect": false
+          },
+          {
+            "text": "Um jeito de brincar de roda",
+            "isCorrect": false
+          },
+          {
+            "text": "Um modelo que ajuda a usar os recursos de forma mais inteligente e a não desperdiçar coisas",
+            "isCorrect": true
+          },
+          {
+            "text": "Um modelo de desenho para colorir",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que podemos fazer para ajudar na economia circular?",
+        "options": [
+          {
+            "text": "Jogar lixo no chão",
+            "isCorrect": false
+          },
+          {
+            "text": "Reutilizar e reciclar coisas",
+            "isCorrect": true
+          },
+          {
+            "text": "Comprar muitas coisas novas o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Deixar as luzes ligadas o tempo todo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é o objetivo da economia circular?",
+        "options": [
+          {
+            "text": "Criar mais lixo",
+            "isCorrect": false
+          },
+          {
+            "text": "Gastar muito dinheiro",
+            "isCorrect": false
+          },
+          {
+            "text": "Usar os recursos de forma inteligente e não desperdiçar coisas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem objetivo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é a 'cascata de uso' na economia circular?",
+        "options": [
+          {
+            "text": "Uma cascata de água para brincar",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma forma de fazer desenhos",
+            "isCorrect": false
+          },
+          {
+            "text": "Um jeito de usar coisas por mais tempo, reutilizar e reciclar",
+            "isCorrect": true
+          },
+          {
+            "text": "Um tipo de bolo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um 'ecossistema de economia circular'?",
+        "options": [
+          {
+            "text": "Um lugar onde só tem brincadeiras",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sistema que ajuda a cuidar dos recursos e a não criar tanto lixo",
+            "isCorrect": true
+          },
+          {
+            "text": "Um lugar com muitas coisas velhas",
+            "isCorrect": false
+          },
+          {
+            "text": "Um sistema que não tem nada a ver com a natureza",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são 'insumos secundários' na economia circular?",
+        "options": [
+          {
+            "text": "Coisas que são usadas só uma vez",
+            "isCorrect": false
+          },
+          {
+            "text": "Coisas que não podem ser recicladas",
+            "isCorrect": false
+          },
+          {
+            "text": "Materiais feitos de plástico novo",
+            "isCorrect": false
+          },
+          {
+            "text": "Materiais derivados de coisas recicladas ou reutilizadas",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "text": "O que é a 'cadeia de valor' na economia circular?",
+        "options": [
+          {
+            "text": "Uma corrente que se usa no pescoço",
+            "isCorrect": false
+          },
+          {
+            "text": "Um jeito de fazer pulseiras",
+            "isCorrect": false
+          },
+          {
+            "text": "O ciclo completo de produção, uso e reutilização de um produto, incluindo todas as etapas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não tem nada a ver com a economia",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que as energias renováveis são importantes?",
+        "options": [
+          {
+            "text": "Não são importantes",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque são mágicas",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque ajudam a proteger o meio ambiente e não causam poluição",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque não funcionam de verdade",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como as ondas do mar podem ser usadas para gerar energia?",
+        "options": [
+          {
+            "text": "As ondas não podem ser usadas para gerar energia",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando barcos para capturar as ondas",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando turbinas especiais que são colocadas no mar para capturar a energia das ondas e gerar eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Usando peixes para capturar a energia das ondas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são biocombustíveis?",
+        "options": [
+          {
+            "text": "Alimentos feitos com ingredientes biológicos",
+            "isCorrect": false
+          },
+          {
+            "text": "Combustíveis feitos de plantas e materiais orgânicos, como o etanol feito do milho",
+            "isCorrect": true
+          },
+          {
+            "text": "Combustíveis feitos apenas de petróleo",
+            "isCorrect": false
+          },
+          {
+            "text": "Combustíveis que vêm do espaço",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que são células solares?",
+        "options": [
+          {
+            "text": "Células que compõem o corpo humano",
+            "isCorrect": false
+          },
+          {
+            "text": "Células que geram eletricidade a partir de alimentos",
+            "isCorrect": false
+          },
+          {
+            "text": "Células que absorvem a energia do sol e a transformam em eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Células que são usadas para fazer desenhos",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a energia solar pode ser armazenada para ser usada quando o sol não está brilhando?",
+        "options": [
+          {
+            "text": "Não pode ser armazenada",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando balões",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando baterias para armazenar a energia gerada pelos painéis solares",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando pipas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é biodiesel?",
+        "options": [
+          {
+            "text": "Um tipo de diesel usado em aviões",
+            "isCorrect": false
+          },
+          {
+            "text": "Um tipo de diesel usado apenas em caminhões",
+            "isCorrect": false
+          },
+          {
+            "text": "Um tipo de combustível feito de óleos vegetais ou gorduras animais",
+            "isCorrect": true
+          },
+          {
+            "text": "Um tipo de combustível que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a energia solar é convertida em eletricidade?",
+        "options": [
+          {
+            "text": "Usando um imã",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando a luz da lua",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando células solares que transformam a luz do sol em eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Usando sementes de plantas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é energia maremotriz?",
+        "options": [
+          {
+            "text": "Energia que vem da maresia",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem das estrelas",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem do movimento das marés do mar, capturada por turbinas especiais para gerar eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia que vem dos peixes",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como a biomassa pode ser usada para gerar energia?",
+        "options": [
+          {
+            "text": "Não pode ser usada",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando máquinas de escrever",
+            "isCorrect": false
+          },
+          {
+            "text": "Usando materiais orgânicos, como resíduos de plantas e animais, para gerar calor ou eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Usando bolos para gerar calor",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma usina solar?",
+        "options": [
+          {
+            "text": "Uma usina onde crescem plantas solares",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma usina que produz calor solar",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma usina que usa painéis solares para gerar eletricidade a partir da luz do sol",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma usina que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma turbina eólica?",
+        "options": [
+          {
+            "text": "Uma turbina que gira com a água",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma turbina que gira com a força do vento para gerar eletricidade",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma turbina que gira com o calor do sol",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma turbina que não gira",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é energia das marés?",
+        "options": [
+          {
+            "text": "Energia que vem dos peixes",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem das baleias",
+            "isCorrect": false
+          },
+          {
+            "text": "Energia que vem do movimento das marés do mar, capturada por turbinas para gerar eletricidade",
+            "isCorrect": true
+          },
+          {
+            "text": "Energia que vem das ondas",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como as energias renováveis podem contribuir para um futuro mais sustentável?",
+        "options": [
+          {
+            "text": "Não podem contribuir",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzindo a dependência de combustíveis fósseis, diminuindo a poluição e ajudando a preservar os recursos naturais",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com um futuro sustentável",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Viajar de avião o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Viajar apenas de carro",
+            "isCorrect": false
+          },
+          {
+            "text": "Usar formas de transporte que causem menos poluição e impacto no meio ambiente",
+            "isCorrect": false
+          },
+          {
+            "text": "Não se preocupar com o meio ambiente ao viajar",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que a mobilidade sustentável é importante?",
+        "options": [
+          {
+            "text": "Não é importante",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais rápido viajar de avião",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque ajuda a reduzir a poluição do ar e a congestionar o trânsito",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como os veículos elétricos contribuem para a mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Não contribuem",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Reduzindo a emissão de poluentes e gases de efeito estufa, ajudando a combater a poluição do ar e as mudanças climáticas",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um veículo a gás natural?",
+        "options": [
+          {
+            "text": "Um veículo movido a gás de cozinha",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo movido a gases de planetas distantes",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que usa gás natural como combustível em vez de gasolina ou diesel",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como os veículos a gás natural podem ser uma opção sustentável?",
+        "options": [
+          {
+            "text": "Não podem ser sustentáveis",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque são mais bonitos",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque emitem menos poluentes nocivos do que os veículos movidos a gasolina ou diesel",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque não têm relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um veículo movido a hidrogênio?",
+        "options": [
+          {
+            "text": "Um veículo que usa apenas água como combustível",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que funciona com a força da água",
+            "isCorrect": false
+          },
+          {
+            "text": "Um veículo que utiliza hidrogênio como combustível em vez de gasolina ou diesel",
+            "isCorrect": true
+          },
+          {
+            "text": "Um veículo que não funciona",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como os veículos movidos a hidrogênio podem contribuir para a mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Não podem contribuir",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Ao serem usados, produzem apenas água como emissão, contribuindo para a redução da poluição do ar",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um 'carro elétrico híbrido'?",
+        "options": [
+          {
+            "text": "Um carro movido a eletricidade e a carvão",
+            "isCorrect": false
+          },
+          {
+            "text": "Um carro que não funciona",
+            "isCorrect": false
+          },
+          {
+            "text": "Um carro que combina um motor elétrico com um motor a combustão, usando ambos os sistemas de propulsão",
+            "isCorrect": true
+          },
+          {
+            "text": "Um carro que funciona apenas durante o dia",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como os carros elétricos híbridos podem ser uma opção sustentável?",
+        "options": [
+          {
+            "text": "Não podem ser sustentáveis",
+            "isCorrect": false
+          },
+          {
+            "text": "Fazem as coisas piorarem",
+            "isCorrect": false
+          },
+          {
+            "text": "Ao combinar motores elétricos e a combustão, podem usar menos combustíveis fósseis e emitir menos poluentes",
+            "isCorrect": true
+          },
+          {
+            "text": "Não têm relação com a poluição",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma 'pegada de plástico'?",
+        "options": [
+          {
+            "text": "Uma marca deixada pelo plástico no chão",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma marca que faz os animais seguirem",
+            "isCorrect": false
+          },
+          {
+            "text": "A quantidade de plástico que uma pessoa usa e descarta, impactando o meio ambiente",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma pegada feita de plástico",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um 'ativismo ambiental'?",
+        "options": [
+          {
+            "text": "Uma festa no meio da floresta",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma atividade que não tem relação com o meio ambiente",
+            "isCorrect": false
+          },
+          {
+            "text": "Ação realizada por pessoas que trabalham para proteger o meio ambiente, como limpar praias ou plantar árvores",
+            "isCorrect": true
+          },
+          {
+            "text": "Um tipo de esporte radical",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Andar de skate o tempo todo",
+            "isCorrect": false
+          },
+          {
+            "text": "Viajar apenas de avião",
+            "isCorrect": false
+          },
+          {
+            "text": "Utilizar formas de transporte que causam menos impacto ambiental e poluição",
+            "isCorrect": true
+          },
+          {
+            "text": "Ficar parado o tempo todo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Por que a mobilidade sustentável é importante?",
+        "options": [
+          {
+            "text": "Não é importante",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais rápido viajar de avião",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque ajuda a proteger o meio ambiente, reduz a poluição do ar e melhora a qualidade de vida",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Qual é uma forma de transporte sustentável?",
+        "options": [
+          {
+            "text": "Voar de helicóptero",
+            "isCorrect": false
+          },
+          {
+            "text": "Andar apenas de carro",
+            "isCorrect": false
+          },
+          {
+            "text": "Utilizar bicicletas, caminhar ou usar o transporte público",
+            "isCorrect": true
+          },
+          {
+            "text": "Andar apenas de patinete elétrico",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "Como o compartilhamento de carro pode ser uma forma de mobilidade sustentável?",
+        "options": [
+          {
+            "text": "Não pode ser sustentável",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque é mais caro do que ter um carro próprio",
+            "isCorrect": false
+          },
+          {
+            "text": "Porque reduz a quantidade de carros nas ruas, diminuindo a poluição e o congestionamento",
+            "isCorrect": true
+          },
+          {
+            "text": "Porque não tem relação com o meio ambiente",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é um 'ativismo ambiental'?",
+        "options": [
+          {
+            "text": "Uma festa no meio da floresta",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma atividade que não tem relação com o meio ambiente",
+            "isCorrect": false
+          },
+          {
+            "text": "Ação realizada por pessoas que trabalham para proteger o meio ambiente, como limpar praias ou plantar árvores",
+            "isCorrect": true
+          },
+          {
+            "text": "Um tipo de esporte radical",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "text": "O que é uma 'pegada de carbono'?",
+        "options": [
+          {
+            "text": "Uma marca feita por um urso",
+            "isCorrect": false
+          },
+          {
+            "text": "Uma marca deixada por carbono na água",
+            "isCorrect": false
+          },
+          {
+            "text": "A quantidade de emissões de gases de efeito estufa produzidas por uma pessoa ou atividade",
+            "isCorrect": true
+          },
+          {
+            "text": "Uma pegada feita de carbono",
             "isCorrect": false
           }
         ]

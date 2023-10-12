@@ -12,7 +12,9 @@ import { Ionicons } from "@expo/vector-icons";
 
 type CompleteScreenProps = StackScreenProps<RootStackParamList, "Complete">;
 
-export const CompleteScreen: React.FC<CompleteScreenProps> = ({ navigation }) => {
+export const CompleteScreen: React.FC<CompleteScreenProps> = ({
+  navigation,
+}) => {
   function redirectToHome() {
     navigation.navigate("Home");
   }
@@ -28,7 +30,7 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({ navigation }) =>
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#FFF",
+    backgroundColor: "#EBFFDF",
     flex: 1,
     gap: 24,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
@@ -40,9 +42,11 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   start: {
+    backgroundColor: "#BDFF95",
+    borderRadius: 20,
+    borderWidth: 3,
+    borderColor: "#000000",
+    padding: 24,
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    borderRadius: 50,
-    paddingVertical: 24,
   },
 });

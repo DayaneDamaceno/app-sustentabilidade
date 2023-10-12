@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.day04.appsustentabilidade"
@@ -27,12 +25,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
-    // "extra": {
-    //   "eas": {
-    //     "projectId": "8bdadd02-4785-4050-9530-4106ec2972fd"
-    //   }
-    // },
-    // "owner": "day04"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "8bdadd02-4785-4050-9530-4106ec2972fd"
+      }
+    },
+    "owner": "day04"
   }
 }

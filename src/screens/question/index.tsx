@@ -7,7 +7,6 @@ import { StackScreenProps } from "@react-navigation/stack";
 import { Question } from "../../models/question";
 import { Option } from "./components/option";
 import { Answer } from "./components/answer";
-import { LinearGradient } from "expo-linear-gradient";
 
 type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
 
@@ -55,15 +54,10 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
       {!showResult && (
         <>
           <View style={styles.header}>
-            <LinearGradient
-              colors={["#49B805", "#B2FF50"]}
-              style={[styles.header, styles.elevation]}
-            >
-              <Text style={styles.textTitle}>
-                Questão {currentIndex + 1}/{questions.length}
-              </Text>
-              <Text style={styles.textQuestion}>{currentQuestion?.text}</Text>
-            </LinearGradient>
+            <Text style={styles.textTitle}>
+              Questão {currentIndex + 1}/{questions.length}
+            </Text>
+            <Text style={styles.textQuestion}>{currentQuestion?.text}</Text>
           </View>
 
           <View style={styles.options}>
@@ -86,62 +80,63 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#EBFFDF",
     flex: 1,
-    gap: 24,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
-    paddingHorizontal: 100,
-    margin: -100,
-    marginTop: -50,
+    paddingHorizontal: 16,
   },
   count: {
     fontSize: 12,
     textAlign: "center",
   },
+
   question: {
     fontSize: 28,
     textAlign: "center",
   },
+
   options: {
-    gap: 10,
-    marginTop: -10,
-  },
-  option: {
+    gap: 25,
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
-    borderRadius: 50,
-    paddingVertical: 24,
   },
 
+  option: {
+    backgroundColor: "#DDDDDD",
+    borderRadius: 50,
+    alignItems: "center",
+  },
   textTitle: {
     fontSize: 40,
-    fontStyle: "normal",
-    color: "white",
+    //fontFamily: "Jomhuria",
+    flexWrap: "wrap",
+    // color: "white",
     alignSelf: "center",
-    marginTop: 40,
+    fontWeight: "400",
+    marginTop: "2%",
   },
 
   textQuestion: {
     fontSize: 20,
     fontStyle: "normal",
-    color: "white",
+    // color: "white",
     alignSelf: "center",
-    marginTop: 40,
-    margin: 20,
-  },
-  header: {
-    width: 392,
-    height: 300,
-    borderRadius: 12,
-    padding: 0,
-    marginLeft: 0.5,
-  },
-  elevation: {
-    elevation: 40,
-    shadowColor: "black",
-    shadowRadius: 20,
-    shadowOpacity: 0.5,
+    justifyContent: "center",
+    marginTop: "15%",
+    margin: "8%",
+    textAlign: "center",
   },
 
-  text: { color: "white", fontSize: 20, marginTop: 20 },
+  header: {
+    backgroundImage: "linear-gradient(#49B805, #B2FF50)",
+    alignSelf: "center",
+    alignItems: "center",
+    width: "100%",
+    height: "30%",
+    marginBottom: "8%",
+    boxShadow: "4px 4px 8px rgba(0, 0, 0, 0.2)",
+    filter:
+      "drop-shadow(2px 8px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));",
+    borderBottomLeftRadius: 12,
+    borderBottomRightRadius: 12,
+  },
 });
 
 function getRandomQuestions(arr: Question[], amount: number) {

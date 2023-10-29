@@ -1,8 +1,6 @@
 import React from "react";
 import { Text, StyleSheet, TouchableOpacity } from "react-native";
-
 import { useNavigation } from "@react-navigation/native";
-
 import { RootStackParamList } from "../../../../routes";
 import { StackNavigationProp } from "@react-navigation/stack";
 import { QuizOption } from "../../../../models/option";
@@ -34,7 +32,7 @@ export const Option: React.FC<OptionProps> = (props) => {
   return (
     <>
       <TouchableOpacity style={styles.button} onPress={onChoiceOption}>
-        <Text style={styles.text} >{props.option.text}</Text>
+        <Text style={styles.text}>{props.option.text}</Text>
       </TouchableOpacity>
     </>
   );
@@ -43,11 +41,21 @@ export const Option: React.FC<OptionProps> = (props) => {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "#72D423",
-    borderRadius: 20,
-    width: 350,
-    height: 75,
+    borderRadius: 16,
+    width: "100%",
+    padding: 14,
+    justifyContent: "center",
     alignItems: "center",
-    marginLeft: 20,
+    background: `linear-gradient(0deg, #72D423 0%, #72D423 100%), linear-gradient(0deg, #FF9A01 0%, #FF9A01 100%), #FF9A01`,
+    boxShadow: `0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset`,
   },
-  text: { color: "white", fontSize: 15, marginTop: 20 },
+  text: {
+    color: "white",
+    fontSize: 16,
+    //fontFamily: "Kanit",
+    marginLeft: "5%",
+    marginRight: "5%",
+    marginVertical: "2%",
+    textAlign: "center",
+  },
 });

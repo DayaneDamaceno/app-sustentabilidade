@@ -16,7 +16,6 @@ interface OptionProps {
 
 export const Option: React.FC<OptionProps> = (props) => {
   const navigation = useNavigation<NavigationProps>();
-
   const redirectToNextQuestion = (wasCorrect: boolean) => {
     navigation.navigate("Question", {
       currentIndex: props.currentIndex + 1,
@@ -37,13 +36,12 @@ export const Option: React.FC<OptionProps> = (props) => {
     </>
   );
 };
-
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "#72D423",
-    borderRadius: 16,
-    width: "100%",
-    padding: 14,
+    borderRadius: 20,
+    width: "87%",
+    height: "35%",
     justifyContent: "center",
     alignItems: "center",
     background: `linear-gradient(0deg, #72D423 0%, #72D423 100%), linear-gradient(0deg, #FF9A01 0%, #FF9A01 100%), #FF9A01`,

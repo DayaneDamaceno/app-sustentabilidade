@@ -4,6 +4,8 @@ import { HomeScreen } from "../screens/home";
 import { LevelScreen } from "../screens/level";
 import { CompleteScreen } from "../screens/complete";
 import { Level } from "../models/level";
+import { CollectScreen } from "../screens/collect";
+import { TipScreen } from "../screens/tip";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -14,6 +16,8 @@ export type RootStackParamList = {
     lastAnswerWasCorrect?: boolean;
   };
   Complete: undefined;
+  Collect: undefined;
+  Tip: undefined;
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -25,6 +29,8 @@ export function Routes() {
       <Stack.Screen name="Level" component={LevelScreen} />
       <Stack.Screen name="Question" component={QuestionScreen} />
       <Stack.Screen name="Complete" component={CompleteScreen} />
+      <Stack.Screen name="Collect" component={CollectScreen} />
+      <Stack.Screen name="Tip" component={TipScreen} />
     </Stack.Navigator>
   );
 }

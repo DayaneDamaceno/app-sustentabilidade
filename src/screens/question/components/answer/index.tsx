@@ -1,33 +1,46 @@
 import React from "react";
-import { Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { correctAnswer } from "../../../../models/answerCount";
 
 interface AnswerProps {
   onNext: () => void;
   lastAnswerWasCorrect?: boolean;
 }
 
-export const Answer: React.FC<AnswerProps> = ({
-  onNext,
-  lastAnswerWasCorrect,
-}) => {
+export const Answer: React.FC<AnswerProps> = ({ onNext, lastAnswerWasCorrect }) => {
+  const containerBackgroundColor = lastAnswerWasCorrect ? "#EBFFDF" : "#FFC0CB";
+  const buttonColor = lastAnswerWasCorrect ? "#BDFF95" : "#FF6B6B";
+
+  const handleNext = () => {
+    onNext();
+    if (lastAnswerWasCorrect) {
+      correctAnswer.count += 1;
+    }
+  };
+
   return (
-    <>
+    <View style={[styles.container, { backgroundColor: containerBackgroundColor }]}>
       <Text style={[styles.text, styles.header]}>
         {lastAnswerWasCorrect ? "Muito bom!!" : "Vamos melhorar"}
       </Text>
       <Text style={styles.text}>
         {lastAnswerWasCorrect
-          ? "Você esta ajudando a salvar o planeta!"
+          ? "Você está ajudando a salvar o planeta!"
           : "Juntos podemos salvar o planeta!"}
       </Text>
-      <TouchableOpacity style={styles.next} onPress={onNext}>
+      <TouchableOpacity style={[styles.next, { backgroundColor: buttonColor }]} onPress={handleNext}>
         <Text style={styles.button}>Continue</Text>
       </TouchableOpacity>
-    </>
+    </View>
   );
 };
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   text: {
     fontSize: 20,
     textAlign: "center",
@@ -36,7 +49,6 @@ const styles = StyleSheet.create({
   next: {
     alignItems: "center",
     alignSelf: "center",
-    backgroundColor: "#BDFF95",
     borderRadius: 20,
     width: "70%",
     height: 80,
@@ -45,8 +57,6 @@ const styles = StyleSheet.create({
     borderWidth: 3,
   },
   header: {
-    alignItems: "center",
-    marginTop: "50%",
     fontWeight: "bold",
     fontSize: 35,
     textAlign: "center",

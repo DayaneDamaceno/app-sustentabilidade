@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { RootStackParamList } from "../../routes";
 import { Ionicons } from "@expo/vector-icons";
+import { correctAnswer } from "../../models/answerCount";
 
 type CompleteScreenProps = StackScreenProps<RootStackParamList, "Complete">;
 
@@ -19,8 +20,9 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({
     navigation.navigate("Home");
   }
   return (
-    <View style={styles.container}>
+<View style={styles.container}>
       <Text style={styles.header}>Quiz Finalizado</Text>
+      <Text style={styles.header}>Quantia de acertos: {correctAnswer.count}</Text>
       <TouchableOpacity style={styles.start} onPress={redirectToHome}>
         <Text>Voltar para home</Text>
       </TouchableOpacity>

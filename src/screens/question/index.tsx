@@ -7,6 +7,7 @@ import { StackScreenProps } from "@react-navigation/stack";
 import { Question } from "../../models/question";
 import { Option } from "./components/option";
 import { Answer } from "./components/answer";
+import { QuizOption } from "../../models/option";
 
 type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
 
@@ -149,8 +150,26 @@ function getRandomQuestions(arr: Question[], amount: number) {
 
   for (let i = 0; i < amount; i++) {
     const randomIndex = Math.floor(Math.random() * copyArray.length);
-    questionsSelected.push(copyArray.splice(randomIndex, 1)[0]);
+    const randomQuestion = { ...copyArray[randomIndex] };
+
+
+    randomQuestion.options = shuffleOptions(randomQuestion.options);
+
+    questionsSelected.push(randomQuestion);
+    copyArray.splice(randomIndex, 1);
   }
 
   return questionsSelected;
+}
+
+function shuffleOptions(options: QuizOption[]) {
+
+  const shuffledOptions = options.slice();
+
+  for (let i = shuffledOptions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+  }
+
+  return shuffledOptions;
 }

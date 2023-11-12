@@ -5,6 +5,8 @@ import { LevelScreen } from "../screens/level";
 import { CompleteScreen } from "../screens/complete";
 import { ContatoScreen } from "../screens/contato";
 import { Level } from "../models/level";
+import NewsScreen from "../screens/news";
+import NewsDetailsScreen from "../screens/newsDetails";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -15,7 +17,11 @@ export type RootStackParamList = {
     lastAnswerWasCorrect?: boolean;
   };
   Complete: undefined;
-  Contato: undefined
+  Contato: undefined;
+  News: undefined;
+  NewsDetails: {
+    id: string;
+  };
 };
 
 const Stack = createStackNavigator<RootStackParamList>();
@@ -28,6 +34,8 @@ export function Routes() {
       <Stack.Screen name="Question" component={QuestionScreen} />
       <Stack.Screen name="Complete" component={CompleteScreen} />
       <Stack.Screen name="Contato" component={ContatoScreen} />
+      <Stack.Screen name="News" component={NewsScreen} />
+      <Stack.Screen name="NewsDetails" component={NewsDetailsScreen} />
     </Stack.Navigator>
   );
 }

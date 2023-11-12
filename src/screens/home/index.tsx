@@ -34,6 +34,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       <TouchableOpacity style={styles.start} onPress={redirectToPerguntas}>
         <Text>Perguntas</Text>
       </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.start}
+        onPress={() => navigation.navigate("News")}
+      >
+        <Text>Noticias</Text>
+      </TouchableOpacity>
     </View>
   );
 };

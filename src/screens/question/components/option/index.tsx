@@ -51,9 +51,9 @@ export const Option: React.FC<OptionProps> = (props) => {
 const styles = StyleSheet.create({
   button: {
     backgroundColor: "#72D423",
-    borderRadius: 20,
-    width: "87%",
-    height: "35%",
+    borderRadius: 16,
+    width: "100%",
+    padding: 14,
     justifyContent: "center",
     alignItems: "center",
     background: `linear-gradient(0deg, #72D423 0%, #72D423 100%), linear-gradient(0deg, #FF9A01 0%, #FF9A01 100%), #FF9A01`,

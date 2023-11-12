@@ -19,6 +19,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   function redirectToContato() {
     navigation.navigate("Contato");
   }
+  function redirectToPerguntas() {
+    navigation.navigate("Perguntas");
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Bem vindo!</Text>
@@ -27,6 +30,9 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       </TouchableOpacity>
       <TouchableOpacity style={styles.start} onPress={redirectToContato}>
         <Text>Contatos</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.start} onPress={redirectToPerguntas}>
+        <Text>Perguntas</Text>
       </TouchableOpacity>
     </View>
   );

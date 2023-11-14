@@ -14,11 +14,10 @@ import { correctAnswer } from "../../models/answerCount";
 
 type HomeScreenProps = StackScreenProps<RootStackParamList, "Home">;
 
-
 export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   function redirectToQuestion() {
     navigation.navigate("Level");
-  } 
+  }
 
   function redirectToCollectionPoints() {
     navigation.navigate("Collect");
@@ -32,17 +31,32 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
     correctAnswer.reset();
   }, []);
 
+  function redirectToContato() {
+    navigation.navigate("Contato");
+  }
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Bem-vindo!</Text>
       <TouchableOpacity style={styles.start} onPress={redirectToQuestion}>
         <Text>Iniciar</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.collectionPoints} onPress={redirectToCollectionPoints}>
+      <TouchableOpacity
+        style={styles.collectionPoints}
+        onPress={redirectToCollectionPoints}
+      >
         <Text>Pontos de coleta</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.TipButton} onPress={redirectToNews}>
         <Text>Dicas de reciclagem</Text>
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.start} onPress={redirectToContato}>
+        <Text>Contatos</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        style={styles.start}
+        onPress={() => navigation.navigate("News")}
+      >
+        <Text>Noticias</Text>
       </TouchableOpacity>
     </View>
   );

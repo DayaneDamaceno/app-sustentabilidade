@@ -7,6 +7,8 @@ import { StackScreenProps } from "@react-navigation/stack";
 import { Question } from "../../models/question";
 import { Option } from "./components/option";
 import { Answer } from "./components/answer";
+import { LinearGradient } from "expo-linear-gradient";
+import * as Font from "expo-font";
 import { QuizOption } from "../../models/option";
 
 type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
@@ -20,6 +22,20 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestion, setCurrentQuestion] = useState<Question>();
   const [showResult, setShowResult] = useState<boolean>();
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+
+  useEffect(() => {
+    async function loadFonts() {
+      await Font.loadAsync({
+        "Jomhuria-Regular": require("../../../assets/fonts/jomhuria/Jomhuria-Regular.ttf"),
+        "Kanit-Bold": require("../../../assets/fonts/kanit/Kanit-Bold.ttf"),
+        "Kanit-Regular": require("../../../assets/fonts/kanit/Kanit-Regular.ttf"),
+      });
+      setFontsLoaded(true);
+    }
+
+    loadFonts();
+  }, []);
 
   useEffect(() => {
     if (questions.length === 0) {
@@ -81,8 +97,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: "#EBFFDF",
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
-    paddingHorizontal: 16,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   count: {
     fontSize: 12,
@@ -104,11 +119,16 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     alignItems: "center",
   },
+
   textTitle: {
-    fontSize: 40,
-    //fontFamily: "Jomhuria",
-    flexWrap: "wrap",
-    // color: "white",
+    fontSize: 50,
+    fontFamily: "Jomhuria-Regular",
+    wordWrap: "break-word",
+    opacity: 0.85,
+    textShadowColor: "rgba(0, 0, 0, 0.75)",
+    textShadowOffset: { width: 0, height: 6 },
+    textShadowRadius: 7,
+    color: "white",
     alignSelf: "center",
     fontWeight: "400",
     marginTop: "2%",
@@ -117,7 +137,11 @@ const styles = StyleSheet.create({
   textQuestion: {
     fontSize: 20,
     fontStyle: "normal",
-    // color: "white",
+    fontFamily: "Kanit-Regular",
+    color: "white",
+    textShadowColor: "rgba(0, 0, 0, 0.35)",
+    textShadowOffset: { width: 1, height: 5 },
+    textShadowRadius: 6,
     alignSelf: "center",
     justifyContent: "center",
     marginTop: "15%",
@@ -152,7 +176,6 @@ function getRandomQuestions(arr: Question[], amount: number) {
     const randomIndex = Math.floor(Math.random() * copyArray.length);
     const randomQuestion = { ...copyArray[randomIndex] };
 
-
     randomQuestion.options = shuffleOptions(randomQuestion.options);
 
     questionsSelected.push(randomQuestion);
@@ -163,12 +186,14 @@ function getRandomQuestions(arr: Question[], amount: number) {
 }
 
 function shuffleOptions(options: QuizOption[]) {
-
   const shuffledOptions = options.slice();
 
   for (let i = shuffledOptions.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [shuffledOptions[i], shuffledOptions[j]] = [shuffledOptions[j], shuffledOptions[i]];
+    [shuffledOptions[i], shuffledOptions[j]] = [
+      shuffledOptions[j],
+      shuffledOptions[i],
+    ];
   }
 
   return shuffledOptions;

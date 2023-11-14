@@ -74,6 +74,10 @@ export const PerguntasScreen: React.FC<PerguntasScreenProps> = ({ navigation }) 
     const [pergunta, setPerguntas] = useState<string>('');
     const [fontsLoaded, setFontsLoaded] = useState(false);
 
+    function redirectToHome() {
+      navigation.navigate("Home");
+    }
+
     useEffect(() => {
       async function loadFonts() {
         await Font.loadAsync({
@@ -85,6 +89,34 @@ export const PerguntasScreen: React.FC<PerguntasScreenProps> = ({ navigation }) 
   
       loadFonts();
     }, []);
+
+    const enviarDados = async () => {
+      try {
+        const response = await fetch(
+          "https://ekoplayportal.azurewebsites.net/sugestoes",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ pergunta }),
+          }
+        );
+  
+        const data = await response.json();
+        console.log(data);
+  
+        if (response.ok) {
+          Alert.alert("Dados enviados com sucesso!");
+          redirectToHome();
+        } else {
+          Alert.alert("Erro ao enviar os dados. Tente novamente.");
+        }
+      } catch (error) {
+        console.error("Erro ao enviar os dados:", error);
+        Alert.alert("Erro ao enviar os dados. Tente novamente.");
+      }
+    };
 
   return (
     <View style={styles.container}>

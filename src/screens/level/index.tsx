@@ -6,6 +6,7 @@ import {
   Platform,
   StatusBar,
   TouchableOpacity,
+  ImageBackground,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { RootStackParamList } from "../../routes";
@@ -36,6 +37,9 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
     loadFonts();
   }, []);
   return (
+  <ImageBackground
+    source={require('../../../assets/Images/Fundo_Floresta.jpeg')}
+    style={styles.imageBackground}>
     <View style={styles.container}>
       <View style={styles.centeredContainer}>
         <Text style={styles.header}>Modo de Jogo</Text>
@@ -65,19 +69,26 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
         </View>
       </View>
     </View>
+    </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#EBFFDF",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
     paddingHorizontal: 24,
     justifyContent: "center",
   },
+  imageBackground: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover',
+    justifyContent: 'center',
+  },
   centeredContainer: {
-    backgroundImage: 'linear-gradient(180deg, #70FF00 0%, rgba(183.01, 255, 126.44, 0) 100%)',
+    backgroundImage: 'linear-gradient(180deg, #70FF00 20%, rgba(183.01, 255, 126.44, 0) 100%)',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.50)',
     border: '4px rgba(0, 0, 0, 0.90) solid',
     borderRadius: 20,

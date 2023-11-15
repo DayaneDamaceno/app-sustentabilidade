@@ -7,6 +7,7 @@ import {
   StatusBar,
   TouchableOpacity,
   ImageBackground,
+  ScrollView,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { RootStackParamList } from "../../routes";
@@ -37,7 +38,8 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
     loadFonts();
   }, []);
   return (
-  <ImageBackground
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
+    <ImageBackground
     source={require('../../../assets/Images/Fundo_Floresta.jpeg')}
     style={styles.imageBackground}>
     <View style={styles.container}>
@@ -70,15 +72,23 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
       </View>
     </View>
     </ImageBackground>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
     paddingHorizontal: 24,
     justifyContent: "center",
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   imageBackground: {
     flex: 1,

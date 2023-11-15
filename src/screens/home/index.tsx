@@ -8,6 +8,7 @@ import {
   StatusBar,
   TouchableOpacity,
   ImageBackground,
+  ScrollView,
 } from "react-native";
 import { RootStackParamList } from "../../routes";
 import { Ionicons } from "@expo/vector-icons";
@@ -37,6 +38,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   }
 
   return (
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
     <ImageBackground
       source={require('../../../assets/Images/Fundo_App.jpeg')}
       style={styles.imageBackground}
@@ -66,11 +68,14 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
         </TouchableOpacity>
       </View>
     </ImageBackground>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     flex: 1,
     gap: 15,
     justifyContent: "center",
@@ -83,6 +88,11 @@ const styles = StyleSheet.create({
     height: '100%',
     resizeMode: 'cover',
     justifyContent: 'center'
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   header: {
     textShadowColor: "rgba(0, 0, 0, 0.4)",

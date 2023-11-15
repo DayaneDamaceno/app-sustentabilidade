@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   TextInput,
   Alert,
+  ScrollView,
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { RootStackParamList } from "../../routes";
@@ -70,6 +71,7 @@ export const ContatoScreen: React.FC<ContatoScreenProps> = ({ navigation }) => {
   };
 
   return (
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
     <View style={styles.container}>
       <Text style={styles.title}>Fale Conosco</Text>
       <Text style={styles.label}>Nome:</Text>
@@ -105,14 +107,17 @@ export const ContatoScreen: React.FC<ContatoScreenProps> = ({ navigation }) => {
         <Text style={styles.titlebutton}>Enviar</Text>
       </TouchableOpacity>
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 20,
+    width: "100%",
+    height: "100%",
     backgroundColor: "#EBFFDF",
     flex: 1,
+    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 20,
     paddingHorizontal: 16,
   },
   title: {
@@ -120,6 +125,11 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textAlign: "center",
     marginTop: 20,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   label: {
     fontFamily: "Kanit-Bold",

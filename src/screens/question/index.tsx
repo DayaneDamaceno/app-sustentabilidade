@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, Platform, StatusBar, PixelRatio } from "react-native";
+import { View, Text, StyleSheet, Platform, StatusBar, ScrollView, } from "react-native";
 import questionsDB from "../../constants/questions.json";
 import { RootStackParamList } from "../../routes";
 import { StackScreenProps } from "@react-navigation/stack";
@@ -10,13 +10,6 @@ import * as Font from "expo-font";
 import { QuizOption } from "../../models/option";
 
 type QuestionScreenProps = StackScreenProps<RootStackParamList, "Question">;
-
-const scaleFont = (size: number) => {
-  const pixelRatio = PixelRatio.get();
-  const basePixelDensity = 2;
-  const scaleFactor = pixelRatio / basePixelDensity;
-  return size * scaleFactor;
-};
 
 export const QuestionScreen: React.FC<QuestionScreenProps> = ({
   route,
@@ -65,6 +58,7 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
   }
 
   return (
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
     <View style={styles.container}>
       {showResult && (
         <Answer
@@ -96,21 +90,30 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
         </>
       )}
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
   },
   count: {
-    fontSize: scaleFont(12),
+    fontSize: 12,
     textAlign: "center",
   },
 
   options: {
     alignItems: "center",
+  },
+
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   textTitle: {

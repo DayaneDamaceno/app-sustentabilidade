@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, Image, StyleSheet } from "react-native";
+import { View, Text, Image, StyleSheet, ScrollView, } from "react-native";
 import { News } from "../news";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "../../routes";
@@ -31,18 +31,27 @@ const NewsDetailsScreen: React.FC<NewsDetailsScreenProps> = ({ route }) => {
   }
 
   return (
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
     <View style={styles.container}>
       {imageUrl && <Image source={{ uri: imageUrl }} style={styles.image} />}
       <Text style={styles.title}>{newsData.titulo}</Text>
       <Text style={styles.content}>{newsData.conteudo}</Text>
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     flex: 1,
     padding: 10,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   image: {
     width: "100%",

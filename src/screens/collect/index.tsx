@@ -2,7 +2,7 @@
 
 import { StackScreenProps } from "@react-navigation/stack";
 import React from "react";
-import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Platform, StatusBar, ScrollView, TouchableOpacity } from "react-native";
 import { RootStackParamList } from "../../routes";
 
 type CollectScreenProps = StackScreenProps<RootStackParamList, "Collect">;
@@ -13,6 +13,7 @@ export const CollectScreen: React.FC<CollectScreenProps> = ({ navigation }) => {
   }
 
   return (
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
     <View style={styles.container}>
       <Text style={styles.title}>Pontos de coleta</Text>
       <View style={styles.collectionBox}>
@@ -26,11 +27,14 @@ export const CollectScreen: React.FC<CollectScreenProps> = ({ navigation }) => {
         <Text>Voltar para home</Text>
       </TouchableOpacity>
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     backgroundColor: "#EBFFDF",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
@@ -46,6 +50,11 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     padding: 24,
     marginTop: 20,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   collectionItem: {
     fontSize: 18,

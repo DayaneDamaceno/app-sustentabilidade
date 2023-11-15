@@ -6,6 +6,7 @@ import {
   Platform,
   StatusBar,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import { RootStackParamList } from "../../routes";
 import { Ionicons } from "@expo/vector-icons";
@@ -23,18 +24,22 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({navigation, route
     navigation.navigate("Home");
   }
   return (
-<View style={styles.container}>
-      <Text style={styles.title}>Quiz Finalizado</Text>
-      <Text style={styles.header}>Quantia de acertos: {correctAnswer.count}</Text>
-      <TouchableOpacity style={styles.start} onPress={redirectToHome} onPressOut={incrementIndex}>
-        <Text style={styles.headerbutton}>Home</Text>
-      </TouchableOpacity>
-    </View>
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
+      <View style={styles.container}>
+        <Text style={styles.title}>Quiz Finalizado</Text>
+        <Text style={styles.header}>Quantia de acertos: {correctAnswer.count}</Text>
+        <TouchableOpacity style={styles.start} onPress={redirectToHome} onPressOut={incrementIndex}>
+          <Text style={styles.headerbutton}>Home</Text>
+        </TouchableOpacity>
+      </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     backgroundColor: "#EBFFDF",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
@@ -45,6 +50,11 @@ const styles = StyleSheet.create({
     fontSize: 35,
     textAlign: "center",
     fontWeight: "bold",
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   header: {
     marginTop: "40%",

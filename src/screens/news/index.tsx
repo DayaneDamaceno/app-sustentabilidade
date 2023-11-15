@@ -6,6 +6,7 @@ import {
   FlatList,
   StyleSheet,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import { RootStackParamList } from "../../routes";
 import { StackScreenProps } from "@react-navigation/stack";
@@ -64,6 +65,7 @@ const NewsScreen: React.FC<NewsScreenProps> = ({ navigation }) => {
   }, []);
 
   return (
+    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
     <View style={styles.container}>
       <FlatList
         data={newsData}
@@ -77,14 +79,22 @@ const NewsScreen: React.FC<NewsScreenProps> = ({ navigation }) => {
         )}
       />
     </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
+    height: "100%",
     flex: 1,
     backgroundColor: "#fff",
     padding: 10,
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   card: {
     backgroundColor: "#fff",

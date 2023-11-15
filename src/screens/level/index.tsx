@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#E5FFD6',
   },
   yellowButton: {
-    boxShadow: '0px 5px 5px rgba(0, 240, 255, 0.70) inset, 0px 5px 5px rgba(0, 240, 255, 0.70)',
+    boxShadow: '0px 5px 5px rgba(255, 244.80, 0, 0.7) inset, 0px 5px 5px rgba(255, 244.80, 0, 0.7)',
     backgroundColor: '#E5FFD6',
   },
   redButton: {

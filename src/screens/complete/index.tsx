@@ -27,7 +27,7 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({navigation, route
       <Text style={styles.title}>Quiz Finalizado</Text>
       <Text style={styles.header}>Quantia de acertos: {correctAnswer.count}</Text>
       <TouchableOpacity style={styles.start} onPress={redirectToHome} onPressOut={incrementIndex}>
-        <Text>Voltar para home</Text>
+        <Text style={styles.headerbutton}>Home</Text>
       </TouchableOpacity>
     </View>
   );
@@ -48,16 +48,24 @@ const styles = StyleSheet.create({
   },
   header: {
     marginTop: "40%",
-    fontSize: 25,
+    fontSize: 30,
     textAlign: "center",
     marginBottom: "10%",
   },
+  headerbutton: {
+    fontSize: 25,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
   start: {
     backgroundColor: "#BDFF95",
+    justifyContent: "center",
+    boxShadow: '0px 7px 7px rgba(0, 0, 0, 0.35) inset',
+    width: "60%",
+    height: "8%",
     borderRadius: 20,
     borderWidth: 3,
     borderColor: "#000000",
-    padding: 24,
-    alignItems: "center",
+    alignSelf: "center",
   },
 });

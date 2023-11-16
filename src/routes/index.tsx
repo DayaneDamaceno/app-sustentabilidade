@@ -4,11 +4,12 @@ import { HomeScreen } from "../screens/home";
 import { LevelScreen } from "../screens/level";
 import { CompleteScreen } from "../screens/complete";
 import { ContatoScreen } from "../screens/contato";
-import { Level } from "../models/level";
 import { CollectScreen } from "../screens/collect";
 import { TipScreen } from "../screens/tip";
+import { Level } from "../models/level";
 import NewsScreen from "../screens/news";
 import NewsDetailsScreen from "../screens/newsDetails";
+import { PerguntasScreen } from "../screens/perguntas";
 
 export type RootStackParamList = {
   Home: undefined;
@@ -22,6 +23,7 @@ export type RootStackParamList = {
   Collect: undefined;
   Tip: undefined;
   Contato: undefined;
+  Perguntas: undefined;
   News: undefined;
   NewsDetails: {
     id: string;
@@ -36,10 +38,11 @@ export function Routes() {
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Level" component={LevelScreen} />
       <Stack.Screen name="Question" component={QuestionScreen} />
-      <Stack.Screen name="Complete" component={CompleteScreen}/>
       <Stack.Screen name="Collect" component={CollectScreen} />
       <Stack.Screen name="Tip" component={TipScreen} />
+      <Stack.Screen name="Complete" component={CompleteScreen} />
       <Stack.Screen name="Contato" component={ContatoScreen} />
+      <Stack.Screen name="Perguntas" component={PerguntasScreen} />
       <Stack.Screen name="News" component={NewsScreen} />
       <Stack.Screen name="NewsDetails" component={NewsDetailsScreen} />
     </Stack.Navigator>

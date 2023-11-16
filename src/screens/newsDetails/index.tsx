@@ -3,6 +3,7 @@ import { View, Text, Image, StyleSheet } from "react-native";
 import { News } from "../news";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "../../routes";
+import { ScrollView } from "react-native-gesture-handler";
 
 type NewsDetailsScreenProps = StackScreenProps<
   RootStackParamList,
@@ -31,11 +32,11 @@ const NewsDetailsScreen: React.FC<NewsDetailsScreenProps> = ({ route }) => {
   }
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       {imageUrl && <Image source={{ uri: imageUrl }} style={styles.image} />}
       <Text style={styles.title}>{newsData.titulo}</Text>
       <Text style={styles.content}>{newsData.conteudo}</Text>
-    </View>
+    </ScrollView>
   );
 };
 

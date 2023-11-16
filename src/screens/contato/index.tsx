@@ -71,42 +71,45 @@ export const ContatoScreen: React.FC<ContatoScreenProps> = ({ navigation }) => {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
-    <View style={styles.container}>
-      <Text style={styles.title}>Fale Conosco</Text>
-      <Text style={styles.label}>Nome:</Text>
-      <TextInput
-        style={styles.boxwrite}
-        placeholder="Digite aqui"
-        onChangeText={(text) => setTextoNome(text)}
-        value={nome}
-      />
-      <Text style={styles.label}>Email:</Text>
-      <TextInput
-        style={styles.boxwrite}
-        placeholder="Digite aqui"
-        onChangeText={(text) => setTextoEmail(text)}
-        value={email}
-      />
-      <Text style={styles.label}>Assunto:</Text>
-      <TextInput
-        style={styles.boxwrite}
-        placeholder="Suporte/Anuncie/Bugs/Contate"
-        onChangeText={(text) => setAssunto(text)}
-        value={assunto}
-      />
-      <Text style={styles.label}>Mensagem:</Text>
-      <TextInput
-        style={styles.textarea}
-        multiline
-        numberOfLines={10}
-        onChangeText={(text) => setMensagem(text)}
-        value={mensagem}
-      />
-      <TouchableOpacity style={styles.start} onPress={enviarDados}>
-        <Text style={styles.titlebutton}>Enviar</Text>
-      </TouchableOpacity>
-    </View>
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
+    >
+      <View style={styles.container}>
+        <Text style={styles.title}>Fale Conosco</Text>
+        <Text style={styles.label}>Nome:</Text>
+        <TextInput
+          style={styles.boxwrite}
+          placeholder="Digite aqui"
+          onChangeText={(text) => setTextoNome(text)}
+          value={nome}
+        />
+        <Text style={styles.label}>Email:</Text>
+        <TextInput
+          style={styles.boxwrite}
+          placeholder="Digite aqui"
+          onChangeText={(text) => setTextoEmail(text)}
+          value={email}
+        />
+        <Text style={styles.label}>Assunto:</Text>
+        <TextInput
+          style={styles.boxwrite}
+          placeholder="Suporte/Anuncie/Bugs/Contate"
+          onChangeText={(text) => setAssunto(text)}
+          value={assunto}
+        />
+        <Text style={styles.label}>Mensagem:</Text>
+        <TextInput
+          style={styles.textarea}
+          multiline
+          numberOfLines={10}
+          onChangeText={(text) => setMensagem(text)}
+          value={mensagem}
+        />
+        <TouchableOpacity style={styles.start} onPress={enviarDados}>
+          <Text style={styles.titlebutton}>Enviar</Text>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 };
@@ -128,8 +131,8 @@ const styles = StyleSheet.create({
   },
   scrollViewContent: {
     flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   label: {
     fontFamily: "Kanit-Bold",

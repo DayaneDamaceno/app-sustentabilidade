@@ -9,26 +9,38 @@ import {
   ScrollView,
 } from "react-native";
 import { RootStackParamList } from "../../routes";
-import { Ionicons } from "@expo/vector-icons";
 import { correctAnswer } from "../../models/answerCount";
 
 type CompleteScreenProps = StackScreenProps<RootStackParamList, "Complete">;
 
-export const CompleteScreen: React.FC<CompleteScreenProps> = ({navigation, route}) => {
+export const CompleteScreen: React.FC<CompleteScreenProps> = ({
+  route,
+  navigation,
+}) => {
   const { currentIndex } = route.params || { currentIndex: 0 };
   const incrementIndex = () => {
     if (currentIndex === 0) {
       correctAnswer.count = 0;
-  }}
+    }
+  };
   function redirectToHome() {
     navigation.navigate("Home");
   }
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
+    >
       <View style={styles.container}>
         <Text style={styles.title}>Quiz Finalizado</Text>
-        <Text style={styles.header}>Quantia de acertos: {correctAnswer.count}</Text>
-        <TouchableOpacity style={styles.start} onPress={redirectToHome} onPressOut={incrementIndex}>
+        <Text style={styles.header}>
+          Quantia de acertos: {correctAnswer.count}
+        </Text>
+        <TouchableOpacity
+          style={styles.start}
+          onPress={redirectToHome}
+          onPressOut={incrementIndex}
+        >
           <Text style={styles.headerbutton}>Home</Text>
         </TouchableOpacity>
       </View>
@@ -53,8 +65,8 @@ const styles = StyleSheet.create({
   },
   scrollViewContent: {
     flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   header: {
     marginTop: "40%",
@@ -70,7 +82,7 @@ const styles = StyleSheet.create({
   start: {
     backgroundColor: "#BDFF95",
     justifyContent: "center",
-    boxShadow: '0px 7px 7px rgba(0, 0, 0, 0.35) inset',
+    boxShadow: "0px 7px 7px rgba(0, 0, 0, 0.35) inset",
     width: "60%",
     height: "8%",
     borderRadius: 20,

@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, Platform, StatusBar, ScrollView, } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Platform,
+  StatusBar,
+  ScrollView,
+} from "react-native";
 import questionsDB from "../../constants/questions.json";
 import { RootStackParamList } from "../../routes";
 import { StackScreenProps } from "@react-navigation/stack";
@@ -22,16 +29,16 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
   const [fontsLoaded, setFontsLoaded] = useState(false);
   const { currentIndex, lastAnswerWasCorrect, level } = route.params;
 
-  useEffect(() => {
-    async function loadFonts() {
-      await Font.loadAsync({
-        "Jomhuria-Regular": require("../../../assets/fonts/jomhuria/Jomhuria-Regular.ttf"),
-        "Kanit-Bold": require("../../../assets/fonts/kanit/Kanit-Bold.ttf"),
-        "Kanit-Regular": require("../../../assets/fonts/kanit/Kanit-Regular.ttf"),
-      });
-      setFontsLoaded(true);
-    }
+  async function loadFonts() {
+    await Font.loadAsync({
+      "Jomhuria-Regular": require("../../../assets/fonts/jomhuria/Jomhuria-Regular.ttf"),
+      "Kanit-Bold": require("../../../assets/fonts/kanit/Kanit-Bold.ttf"),
+      "Kanit-Regular": require("../../../assets/fonts/kanit/Kanit-Regular.ttf"),
+    });
+    setFontsLoaded(true);
+  }
 
+  useEffect(() => {
     loadFonts();
   }, []);
 
@@ -45,12 +52,16 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
       );
       setQuestions(() => [...tenRandomQuestions]);
     }
-  }, []);
+  }, [questions, level, numberOfQuestions]);
 
   useEffect(() => {
     setCurrentQuestion(questions[currentIndex]);
     setShowResult(currentIndex !== 0);
   }, [questions, currentIndex]);
+
+  if (!fontsLoaded) {
+    return <Text>Loading...</Text>;
+  }
 
   function handleOnNext() {
     setShowResult(false);
@@ -58,38 +69,41 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
   }
 
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
-    <View style={styles.container}>
-      {showResult && (
-        <Answer
-          lastAnswerWasCorrect={lastAnswerWasCorrect}
-          onNext={handleOnNext}
-          currentIndex={currentIndex}
-        />
-      )}
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
+    >
+      <View style={styles.container}>
+        {showResult && (
+          <Answer
+            lastAnswerWasCorrect={lastAnswerWasCorrect}
+            onNext={handleOnNext}
+            currentIndex={currentIndex}
+          />
+        )}
 
-      {!showResult && (
-        <>
-          <View style={styles.header}>
-            <Text style={styles.textTitle}>
-              Questão {currentIndex + 1}/{questions.length}
-            </Text>
-            <Text style={styles.textQuestion}>{currentQuestion?.text}</Text>
-          </View>
+        {!showResult && (
+          <>
+            <View style={styles.header}>
+              <Text style={styles.textTitle}>
+                Questão {currentIndex + 1}/{questions.length}
+              </Text>
+              <Text style={styles.textQuestion}>{currentQuestion?.text}</Text>
+            </View>
 
-          <View style={styles.options}>
-            {currentQuestion?.options.map((option, index) => (
-              <Option
-                key={index}
-                currentIndex={currentIndex}
-                option={option}
-                level={level}
-              />
-            ))}
-          </View>
-        </>
-      )}
-    </View>
+            <View style={styles.options}>
+              {currentQuestion?.options.map((option, index) => (
+                <Option
+                  key={index}
+                  currentIndex={currentIndex}
+                  option={option}
+                  level={level}
+                />
+              ))}
+            </View>
+          </>
+        )}
+      </View>
     </ScrollView>
   );
 };
@@ -112,14 +126,14 @@ const styles = StyleSheet.create({
 
   scrollViewContent: {
     flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
 
   textTitle: {
     fontSize: 50,
     fontFamily: "Jomhuria-Regular",
-    wordWrap: "break-word",
+    // wordWrap: "break-word",
     opacity: 0.85,
     textShadowColor: "rgba(0, 0, 0, 0.75)",
     textShadowOffset: { width: 0, height: 6 },

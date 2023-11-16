@@ -38,36 +38,39 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
   }
 
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
-    <ImageBackground
-      source={require('../../../assets/Images/Fundo_App.jpeg')}
-      style={styles.imageBackground}
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
     >
-      <View style={styles.container}>
-        <Text style={styles.header}>EkoPlay</Text>
-        <TouchableOpacity style={styles.start} onPress={redirectToQuestion}>
-          <Text style={styles.buttontext}>Iniciar</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.start}
-          onPress={redirectToCollectionPoints}
-        >
-          <Text style={styles.buttontext}>Pontos de coleta</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.start} onPress={redirectToNews}>
-          <Text style={styles.buttontext}>Dicas de reciclagem</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.start} onPress={redirectToContato}>
-          <Text style={styles.buttontext}>Contatos</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={styles.start}
-          onPress={() => navigation.navigate("News")}
-        >
-          <Text style={styles.buttontext}>Noticias</Text>
-        </TouchableOpacity>
-      </View>
-    </ImageBackground>
+      <ImageBackground
+        source={require("../../../assets/Images/Fundo_App.jpeg")}
+        style={styles.imageBackground}
+      >
+        <View style={styles.container}>
+          <Text style={styles.header}>EkoPlay</Text>
+          <TouchableOpacity style={styles.start} onPress={redirectToQuestion}>
+            <Text style={styles.buttontext}>Iniciar</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.start}
+            onPress={redirectToCollectionPoints}
+          >
+            <Text style={styles.buttontext}>Pontos de coleta</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.start} onPress={redirectToNews}>
+            <Text style={styles.buttontext}>Dicas de reciclagem</Text>
+          </TouchableOpacity>
+          <TouchableOpacity style={styles.start} onPress={redirectToContato}>
+            <Text style={styles.buttontext}>Contatos</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.start}
+            onPress={() => navigation.navigate("News")}
+          >
+            <Text style={styles.buttontext}>Noticias</Text>
+          </TouchableOpacity>
+        </View>
+      </ImageBackground>
     </ScrollView>
   );
 };
@@ -80,19 +83,19 @@ const styles = StyleSheet.create({
     gap: 15,
     justifyContent: "center",
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
-    paddingHorizontal: "5%"
+    paddingHorizontal: "5%",
   },
   imageBackground: {
     flex: 1,
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
-    justifyContent: 'center'
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
+    justifyContent: "center",
   },
   scrollViewContent: {
     flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   header: {
     textShadowColor: "rgba(0, 0, 0, 0.4)",
@@ -103,19 +106,19 @@ const styles = StyleSheet.create({
     marginBottom: "10%",
     fontSize: 50,
     textAlign: "center",
-    color: "Black",
+    color: "#000000",
   },
   buttontext: {
     fontWeight: "bold",
     fontSize: 15,
     textAlign: "center",
-    color: "Black",
+    color: "#000000",
   },
   start: {
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#75FFFF",
-    boxShadow: '0px 7px 7px rgba(0, 0, 0, 0.35) inset',
+    boxShadow: "0px 7px 7px rgba(0, 0, 0, 0.35) inset",
     borderRadius: 20,
     paddingVertical: "5%",
     borderTopColor: "#000000",

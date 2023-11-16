@@ -37,41 +37,49 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
 
     loadFonts();
   }, []);
+
+  if (!fontsLoaded) {
+    return <Text>Loading...</Text>;
+  }
   return (
-    <ScrollView contentContainerStyle={styles.scrollViewContent} scrollEnabled={true}>
-    <ImageBackground
-    source={require('../../../assets/Images/Fundo_Floresta.jpeg')}
-    style={styles.imageBackground}>
-    <View style={styles.container}>
-      <View style={styles.centeredContainer}>
-        <Text style={styles.header}>Modo de Jogo</Text>
-        <View style={styles.buttonBox}>
-          <TouchableOpacity
-            style={[styles.start, styles.greenButton]}
-            onPress={() => redirectToQuestion(Level.Easy)}
-          >
-            <Text style={styles.buttontitle}>Fácil</Text>
-          </TouchableOpacity>
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
+    >
+      <ImageBackground
+        source={require("../../../assets/Images/Fundo_Floresta.jpeg")}
+        style={styles.imageBackground}
+      >
+        <View style={styles.container}>
+          <View style={styles.centeredContainer}>
+            <Text style={styles.header}>Modo de Jogo</Text>
+            <View style={styles.buttonBox}>
+              <TouchableOpacity
+                style={[styles.start, styles.greenButton]}
+                onPress={() => redirectToQuestion(Level.Easy)}
+              >
+                <Text style={styles.buttontitle}>Fácil</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.buttonBox}>
+              <TouchableOpacity
+                style={[styles.start, styles.yellowButton]}
+                onPress={() => redirectToQuestion(Level.Medium)}
+              >
+                <Text style={styles.buttontitle}>Médio</Text>
+              </TouchableOpacity>
+            </View>
+            <View style={styles.buttonBox}>
+              <TouchableOpacity
+                style={[styles.start, styles.redButton]}
+                onPress={() => redirectToQuestion(Level.Hard)}
+              >
+                <Text style={styles.buttontitle}>Difícil</Text>
+              </TouchableOpacity>
+            </View>
+          </View>
         </View>
-        <View style={styles.buttonBox}>
-          <TouchableOpacity
-            style={[styles.start, styles.yellowButton]}
-            onPress={() => redirectToQuestion(Level.Medium)}
-          >
-            <Text style={styles.buttontitle}>Médio</Text>
-          </TouchableOpacity>
-        </View>
-        <View style={styles.buttonBox}>
-          <TouchableOpacity
-            style={[styles.start, styles.redButton]}
-            onPress={() => redirectToQuestion(Level.Hard)}
-          >
-            <Text style={styles.buttontitle}>Difícil</Text>
-          </TouchableOpacity>
-        </View>
-      </View>
-    </View>
-    </ImageBackground>
+      </ImageBackground>
     </ScrollView>
   );
 };
@@ -87,20 +95,21 @@ const styles = StyleSheet.create({
   },
   scrollViewContent: {
     flexGrow: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
   },
   imageBackground: {
     flex: 1,
-    width: '100%',
-    height: '100%',
-    resizeMode: 'cover',
-    justifyContent: 'center',
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
+    justifyContent: "center",
   },
   centeredContainer: {
-    backgroundImage: 'linear-gradient(180deg, #70FF00 20%, rgba(183.01, 255, 126.44, 0) 100%)',
-    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.50)',
-    border: '4px rgba(0, 0, 0, 0.90) solid',
+    backgroundImage:
+      "linear-gradient(180deg, #70FF00 20%, rgba(183.01, 255, 126.44, 0) 100%)",
+    boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.50)",
+    border: "4px rgba(0, 0, 0, 0.90) solid",
     borderRadius: 20,
     borderWidth: 3,
     borderColor: "#000000",
@@ -130,19 +139,22 @@ const styles = StyleSheet.create({
     paddingVertical: "3%",
     borderRadius: 22,
     marginHorizontal: "7%",
-    marginVertical: "2%"
+    marginVertical: "2%",
   },
   greenButton: {
-    boxShadow: '0px 5px 5px rgba(0, 255, 71, 0.70) inset, 0px 5px 5px rgba(0, 255, 71, 0.70)',
-    backgroundColor: '#E5FFD6',
+    boxShadow:
+      "0px 5px 5px rgba(0, 255, 71, 0.70) inset, 0px 5px 5px rgba(0, 255, 71, 0.70)",
+    backgroundColor: "#E5FFD6",
   },
   yellowButton: {
-    boxShadow: '0px 5px 5px rgba(255, 244.80, 0, 0.7) inset, 0px 5px 5px rgba(255, 244.80, 0, 0.7)',
-    backgroundColor: '#E5FFD6',
+    boxShadow:
+      "0px 5px 5px rgba(255, 244.80, 0, 0.7) inset, 0px 5px 5px rgba(255, 244.80, 0, 0.7)",
+    backgroundColor: "#E5FFD6",
   },
   redButton: {
-    boxShadow: '0px 5px 5px rgba(255, 0, 0, 0.70) inset, 0px 5px 5px rgba(255, 0, 0, 0.70)',
-    backgroundColor: '#E5FFD6',
+    boxShadow:
+      "0px 5px 5px rgba(255, 0, 0, 0.70) inset, 0px 5px 5px rgba(255, 0, 0, 0.70)",
+    backgroundColor: "#E5FFD6",
   },
   startButtonText: {
     fontSize: 20,

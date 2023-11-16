@@ -9,7 +9,10 @@ interface AnswerProps {
   currentIndex: number;
 }
 
-export const Answer: React.FC<AnswerProps> = ({ onNext, lastAnswerWasCorrect }) => {
+export const Answer: React.FC<AnswerProps> = ({
+  onNext,
+  lastAnswerWasCorrect,
+}) => {
   const containerBackgroundColor = lastAnswerWasCorrect ? "#EBFFDF" : "#FFC0CB";
   const buttonColor = lastAnswerWasCorrect ? "#BDFF95" : "#FF6B6B";
   const [fontsLoaded, setFontsLoaded] = useState(false);
@@ -27,6 +30,10 @@ export const Answer: React.FC<AnswerProps> = ({ onNext, lastAnswerWasCorrect }) 
     loadFonts();
   }, []);
 
+  if (!fontsLoaded) {
+    return <Text>Loading...</Text>;
+  }
+
   const handleNext = () => {
     onNext();
     if (lastAnswerWasCorrect) {
@@ -35,7 +42,9 @@ export const Answer: React.FC<AnswerProps> = ({ onNext, lastAnswerWasCorrect }) 
   };
 
   return (
-    <View style={[styles.container, { backgroundColor: containerBackgroundColor }]}>
+    <View
+      style={[styles.container, { backgroundColor: containerBackgroundColor }]}
+    >
       <Text style={[styles.texttitle, styles.header]}>
         {lastAnswerWasCorrect ? "Muito bom!!" : "Vamos melhorar"}
       </Text>
@@ -44,7 +53,10 @@ export const Answer: React.FC<AnswerProps> = ({ onNext, lastAnswerWasCorrect }) 
           ? "Você está ajudando a salvar o planeta!"
           : "Juntos podemos salvar o planeta!"}
       </Text>
-      <TouchableOpacity style={[styles.next, { backgroundColor: buttonColor }]} onPress={handleNext}>
+      <TouchableOpacity
+        style={[styles.next, { backgroundColor: buttonColor }]}
+        onPress={handleNext}
+      >
         <Text style={styles.button}>Continue</Text>
       </TouchableOpacity>
     </View>
@@ -72,7 +84,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignSelf: "center",
     borderRadius: 20,
-    boxShadow: '0px 7px 7px rgba(0, 0, 0, 0.35) inset',
+    boxShadow: "0px 7px 7px rgba(0, 0, 0, 0.35) inset",
     width: "60%",
     height: "8%",
     borderTopColor: "#000000",

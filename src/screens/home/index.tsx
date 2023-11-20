@@ -76,6 +76,12 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
           >
             <Text style={styles.buttontext}>Sugira perguntas</Text>
           </TouchableOpacity>
+          <TouchableOpacity
+            style={styles.start}
+            onPress={() => navigation.navigate("Parceiros")}
+          >
+            <Text style={styles.buttontext}>Parceiros</Text>
+          </TouchableOpacity>
         </View>
       </ImageBackground>
     </ScrollView>

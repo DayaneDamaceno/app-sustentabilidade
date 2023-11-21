@@ -134,7 +134,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     paddingVertical: "5%",
     borderWidth: 3,
-    elevation: 5, // Adiciona sombra no Android
+    elevation: 5,
   },
 });
 

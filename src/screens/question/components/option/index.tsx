@@ -48,7 +48,7 @@ export const Option: React.FC<OptionProps> = (props) => {
     redirectToNextQuestion(props.option.isCorrect);
   }
   return (
-    <TouchableOpacity style={styles.flexshadow} onPress={onChoiceOption}>
+    <TouchableOpacity style={styles.flexshadow} onPress={onChoiceOption} activeOpacity={0.7}>
       <TouchableOpacity style={styles.button} onPress={onChoiceOption} activeOpacity={0.7}>
         <Text style={styles.text}>{props.option.text}</Text>
       </TouchableOpacity>
@@ -60,14 +60,13 @@ const styles = StyleSheet.create({
   button: {
     flex: 1,
     backgroundColor: "#72D423",
-    padding: -16,
+    padding: 16,
     borderRadius: 16,
-    width: "87%",
+    width: "100%",
   },
   flexshadow: {
     flex: 1,
     backgroundColor: "#72D423",
-    padding: 16,
     width: "87%",
     borderColor:"rgba(0, 0, 0, 0.2)",
     marginVertical: "2%",

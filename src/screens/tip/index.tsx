@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { 
   View,
   Text,
@@ -11,6 +11,7 @@ import {
 } from "react-native";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "../../routes";
+import * as Font from "expo-font";
 
 type TipScreenProps = StackScreenProps<RootStackParamList, "Tip">;
 
@@ -39,6 +40,22 @@ export const TipScreen: React.FC<TipScreenProps> = ({ navigation }) => {
   function redirectToHome() {
     navigation.navigate("Home");
   }
+
+  const [fontsLoaded, setFontsLoaded] = useState(false);
+
+async function loadFonts() {
+  await Font.loadAsync({
+    "Kanit-Bold": require("../../../assets/fonts/kanit/Kanit-Bold.ttf"),
+  });
+  setFontsLoaded(true);
+}
+useEffect(() => {
+  loadFonts();
+}, []);
+
+if (!fontsLoaded) {
+  return <Text>Loading...</Text>;
+}
 
   const handleSwipe = (direction: "right" | "left") => {
     if (direction === "right" && currentIndex < DATA.length - 1) {

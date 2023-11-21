@@ -79,7 +79,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
             style={styles.start}
             onPress={() => navigation.navigate("Parceiros")}
           >
-            <Text style={styles.buttontext}>Parceiros</Text>
+            <Text style={styles.buttontext}>Seja nosso parceiro</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>

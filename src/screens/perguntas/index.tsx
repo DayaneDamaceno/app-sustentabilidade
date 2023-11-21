@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
   TextInput,
   Alert,
+  ScrollView,
+  ImageBackground
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { RootStackParamList } from "../../routes";
@@ -19,8 +21,7 @@ type PerguntasScreenProps = StackScreenProps<RootStackParamList, "Perguntas">;
 
 const styles = StyleSheet.create({
   container: {
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 20,
-    backgroundColor: "#EBFFDF",
+    marginTop: "5%",
     flex: 1,
     paddingHorizontal: 15,
   },
@@ -35,17 +36,17 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textAlign: "center",
     paddingBottom: 2,
-    marginTop: 0,
   },
   header: {
     fontFamily: "Kanit-Bold",
     fontSize: 35,
     textAlign: "left",
     paddingLeft: "2%",
+    marginBottom: "20%",
   },
   boxwrite3: {
-    height: "20%",
-    width: "80%",
+    height: "30%",
+    width: "85%",
     backgroundColor: "white",
     borderColor: "black",
     borderWidth: 1.8,
@@ -58,10 +59,22 @@ const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 25,
   },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  imageBackground: {
+    flex: 1,
+    alignSelf: "center",
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
+  },
   start: {
     width: "50%",
     height: "8%",
-    backgroundColor: "#85FF91",
+    backgroundColor: "#A0D2FF",
     borderRadius: 15,
     borderWidth: 2,
     border: "2px black solid",
@@ -124,6 +137,14 @@ export const PerguntasScreen: React.FC<PerguntasScreenProps> = ({
   };
 
   return (
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
+    >
+    <ImageBackground
+        source={require("../../../assets/Images/FundoDicas.jpeg")}
+        style={styles.imageBackground}
+      >
     <View style={styles.container}>
       <Text style={styles.subtitle}>Envie</Text>
       <Text style={styles.title}>Suas Perguntas</Text>
@@ -139,5 +160,7 @@ export const PerguntasScreen: React.FC<PerguntasScreenProps> = ({
         <Text style={styles.titlebutton}>Enviar</Text>
       </TouchableOpacity>
     </View>
+    </ImageBackground>
+    </ScrollView>
   );
 };

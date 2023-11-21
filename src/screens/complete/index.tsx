@@ -7,6 +7,7 @@ import {
   StatusBar,
   TouchableOpacity,
   ScrollView,
+  ImageBackground
 } from "react-native";
 import { RootStackParamList } from "../../routes";
 import { correctAnswer } from "../../models/answerCount";
@@ -23,6 +24,17 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({
       correctAnswer.count = 0;
     }
   };
+  
+  const getBackgroundImage = () => {
+    if (correctAnswer.count > 7) {
+      return require("../../../assets/Images/Gold.png");
+    } else if (correctAnswer.count > 5) {
+      return require("../../../assets/Images/Silver.png");
+    } else {
+      return require("../../../assets/Images/Bronze.png");
+    }
+  };
+
   function redirectToHome() {
     navigation.navigate("Home");
   }
@@ -31,6 +43,10 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({
       contentContainerStyle={styles.scrollViewContent}
       scrollEnabled={true}
     >
+      <ImageBackground
+        source={getBackgroundImage()}
+        style={styles.imageBackground}
+      >
       <View style={styles.container}>
         <Text style={styles.title}>Quiz Finalizado</Text>
         <Text style={styles.header}>
@@ -44,6 +60,7 @@ export const CompleteScreen: React.FC<CompleteScreenProps> = ({
           <Text style={styles.headerbutton}>Home</Text>
         </TouchableOpacity>
       </View>
+      </ImageBackground>
     </ScrollView>
   );
 };
@@ -52,16 +69,22 @@ const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: "100%",
-    backgroundColor: "#EBFFDF",
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
     paddingHorizontal: 24,
   },
   title: {
-    marginTop: "50%",
+    marginTop: "20%",
     fontSize: 35,
+    marginBottom: "95%",
     textAlign: "center",
     fontWeight: "bold",
+  },
+  imageBackground: {
+    flex: 1,
+    alignSelf: "center",
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
   },
   scrollViewContent: {
     flexGrow: 1,
@@ -69,7 +92,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   header: {
-    marginTop: "40%",
+    marginTop: "25%",
     fontSize: 30,
     textAlign: "center",
     marginBottom: "10%",

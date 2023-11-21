@@ -42,11 +42,10 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
       scrollEnabled={true}
     >
       <ImageBackground
-        source={require("../../../assets/Images/Fundo_App.jpeg")}
+        source={require("../../../assets/Images/Fundo_App.png")}
         style={styles.imageBackground}
       >
         <View style={styles.container}>
-          <Text style={styles.header}>3koPlay</Text>
           <TouchableOpacity style={styles.start} onPress={redirectToQuestion}>
             <Text style={styles.buttontext}>Iniciar</Text>
           </TouchableOpacity>
@@ -94,7 +93,7 @@ const styles = StyleSheet.create({
     flex: 1,
     gap: 15,
     justifyContent: "center",
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
+    paddingTop: "30%",
     paddingHorizontal: "5%",
   },
   imageBackground: {
@@ -108,17 +107,6 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     justifyContent: "center",
     alignItems: "center",
-  },
-  header: {
-    textShadowRadius: 3,
-    fontWeight: "bold",
-    marginTop: "5%",
-    marginBottom: "10%",
-    fontSize: 50,
-    textAlign: "center",
-    color: "#000000",
-    textShadowColor: 'rgba(0, 0, 0, 0.4)',
-    textShadowOffset: { width: 0, height: 5 },
   },
   buttontext: {
     fontWeight: "bold",

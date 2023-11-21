@@ -120,7 +120,6 @@ const styles = StyleSheet.create({
     height: "100%",
     backgroundColor: "#EBFFDF",
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 20,
     paddingHorizontal: 16,
   },
   title: {
@@ -128,6 +127,7 @@ const styles = StyleSheet.create({
     fontSize: 40,
     textAlign: "center",
     marginTop: 20,
+    marginBottom: "10%"
   },
   scrollViewContent: {
     flexGrow: 1,

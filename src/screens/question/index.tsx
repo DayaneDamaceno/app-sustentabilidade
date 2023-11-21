@@ -6,6 +6,7 @@ import {
   Platform,
   StatusBar,
   ScrollView,
+  ImageBackground
 } from "react-native";
 import questionsDB from "../../constants/questions.json";
 import { RootStackParamList } from "../../routes";
@@ -74,6 +75,10 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
       contentContainerStyle={styles.scrollViewContent}
       scrollEnabled={true}
     >
+      <ImageBackground
+        source={require("../../../assets/Images/Cap.png")}
+        style={styles.imageBackground}
+      >
       <View style={styles.container}>
         {showResult && (
           <Answer
@@ -107,6 +112,7 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
           </>
         )}
       </View>
+      </ImageBackground>
     </ScrollView>
   );
 };
@@ -124,6 +130,14 @@ const styles = StyleSheet.create({
 
   options: {
     alignItems: "center",
+  },
+
+  imageBackground: {
+    flex: 1,
+    alignSelf: "center",
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
   },
 
   scrollViewContent: {

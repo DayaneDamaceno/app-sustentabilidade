@@ -7,7 +7,8 @@ import {
   StatusBar,
   Image, 
   TouchableOpacity, 
-  ScrollView 
+  ScrollView,
+  ImageBackground
 } from "react-native";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "../../routes";
@@ -70,6 +71,10 @@ if (!fontsLoaded) {
       contentContainerStyle={styles.scrollViewContent}
       scrollEnabled={true}
     >
+      <ImageBackground
+        source={require("../../../assets/Images/FundoDicas.jpeg")}
+        style={styles.imageBackground}
+      >
      <View style={styles.container}>
         <Text style={styles.title}>Dicas de reciclagem</Text>
         <Text style={styles.carouselTitle}>{DATA[currentIndex].title}</Text>
@@ -99,6 +104,7 @@ if (!fontsLoaded) {
           <Text>Voltar para home</Text>
         </TouchableOpacity>
       </View>
+      </ImageBackground>
     </ScrollView>
   );
 };
@@ -106,10 +112,16 @@ if (!fontsLoaded) {
 const styles = StyleSheet.create({
   container: {
     width: "100%",
-    backgroundColor: "#EBFFDF",
     flex: 1,
     alignItems: "center",
     paddingHorizontal: "2%",
+  },
+  imageBackground: {
+    flex: 1,
+    alignSelf: "center",
+    width: "100%",
+    height: "100%",
+    justifyContent: "center",
   },
   title: {
     fontFamily: "Kanit-Bold",
@@ -130,7 +142,7 @@ const styles = StyleSheet.create({
     height: "80%",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#98FF98",
+    backgroundColor: "rgba(60.31, 161, 253.94, 0.90)",
     borderColor: "#00000",
     borderWidth: 3,
     borderRadius: 15,
@@ -161,7 +173,7 @@ const styles = StyleSheet.create({
   },
   returnButton: {
     width: "80%",
-    backgroundColor: "#BDFF95",
+    backgroundColor: "#A0D2FF",
     borderRadius: 20,
     borderWidth: 3,
     borderColor: "#000000",

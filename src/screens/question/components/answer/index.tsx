@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 import { correctAnswer } from "../../../../models/answerCount";
 import * as Font from "expo-font";
 import { LinearGradient } from 'expo-linear-gradient';
@@ -14,9 +14,10 @@ export const Answer: React.FC<AnswerProps> = ({
   onNext,
   lastAnswerWasCorrect,
 }) => {
-  const containerBackgroundColor = lastAnswerWasCorrect ? "#EBFFDF" : "#FFC0CB";
   const buttonColor = lastAnswerWasCorrect ? "#BDFF95" : "#FF6B6B";
   const [fontsLoaded, setFontsLoaded] = useState(false);
+  const backgroundImageCorrect = require("../../../../../assets/Images/Jacarezin.png");
+  const backgroundImageIncorrect = require("../../../../../assets/Images/Error.png");
 
   useEffect(() => {
     async function loadFonts() {
@@ -43,8 +44,12 @@ export const Answer: React.FC<AnswerProps> = ({
   };
 
   return (
+    <ImageBackground
+    source={lastAnswerWasCorrect ? backgroundImageCorrect : backgroundImageIncorrect}
+    style={[styles.imageBackground]}
+  >
     <View
-      style={[styles.container, { backgroundColor: containerBackgroundColor }]}
+      style={styles.container}
     >
       <Text style={[styles.texttitle, styles.header]}>
         {lastAnswerWasCorrect ? "Muito bom!!" : "Vamos melhorar"}
@@ -61,6 +66,7 @@ export const Answer: React.FC<AnswerProps> = ({
         <Text style={styles.button}>Continue</Text>
       </TouchableOpacity>
     </View>
+    </ImageBackground>
   );
 };
 
@@ -71,7 +77,7 @@ const styles = StyleSheet.create({
   },
   texttitle: {
     fontFamily: "Kanit-Bold",
-    marginTop: "50%",
+    marginTop: "20%",
     fontSize: 20,
     textAlign: "center",
   },
@@ -80,12 +86,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: "center",
   },
-  next: {
-    marginTop: 100,
-    justifyContent: "center",
+  imageBackground: {
+    flex: 1,
     alignSelf: "center",
+    width: "100%",
+    height: "100%",
+    resizeMode: "cover",
+    justifyContent: "center",
+  },
+  next: {
+    marginTop: "90%",
+    justifyContent: "center",
     borderRadius: 20,
-    boxShadow: "0px 7px 7px rgba(0, 0, 0, 0.35) inset",
     width: "60%",
     height: "8%",
     borderTopColor: "#000000",

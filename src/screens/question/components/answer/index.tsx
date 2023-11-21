@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { correctAnswer } from "../../../../models/answerCount";
 import * as Font from "expo-font";
+import { LinearGradient } from 'expo-linear-gradient';
 
 interface AnswerProps {
   onNext: () => void;

@@ -89,7 +89,7 @@ export const QuestionScreen: React.FC<QuestionScreenProps> = ({
             colors={['#49B805', '#B2FF50']}
             style={styles.header}>
               <Text style={styles.textTitle}>
-                Questão {currentIndex + 1}/{questions.length}
+                Questão {currentIndex < 10 ? currentIndex + 1 : currentIndex}/{questions.length}
               </Text>
               <Text style={styles.textQuestion}>{currentQuestion?.text}</Text>
           </LinearGradient>

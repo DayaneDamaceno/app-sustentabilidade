@@ -1,5 +1,14 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity, ScrollView } from "react-native";
+import { 
+  View,
+  Text,
+  StyleSheet,
+  Platform,
+  StatusBar,
+  Image, 
+  TouchableOpacity, 
+  ScrollView 
+} from "react-native";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "../../routes";
 
@@ -46,16 +55,27 @@ export const TipScreen: React.FC<TipScreenProps> = ({ navigation }) => {
     >
      <View style={styles.container}>
         <Text style={styles.title}>Dicas de reciclagem</Text>
-        <View style={styles.carouselItem}>
-          <Text style={styles.carouselTitle}>{DATA[currentIndex].title}</Text>
-          <Text style={styles.carouselContent}>{DATA[currentIndex].content}</Text>
-       </View>
-       <View style={styles.navigationButtons}>
+        <Text style={styles.carouselTitle}>{DATA[currentIndex].title}</Text>
+        <View style={styles.navigationButtons}>
          <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("left")}>
-           <Text>◀️</Text>
+         <Image
+            source={require('../../../assets/ArrowLeft.png')}
+            style={styles.buttonImage}
+         />
          </TouchableOpacity>
+         <ScrollView
+          contentContainerStyle={styles.scrollViewContent}
+          scrollEnabled={true}
+          >
+            <View style={styles.carouselItem}>
+              <Text style={styles.carouselContent}>{DATA[currentIndex].content}</Text>
+            </View>
+          </ScrollView>
          <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("right")}>
-           <Text>▶️</Text>
+         <Image
+            source={require('../../../assets/ArrowRight.png')}
+            style={styles.buttonImage}
+         />
           </TouchableOpacity>
         </View>
         <TouchableOpacity style={styles.returnButton} onPress={redirectToHome}>
@@ -71,13 +91,16 @@ const styles = StyleSheet.create({
     width: "100%",
     backgroundColor: "#EBFFDF",
     flex: 1,
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
-    paddingHorizontal: 24,
+    alignItems: "center",
+    paddingHorizontal: "2%",
   },
   title: {
-    marginTop: 12,
-    fontSize: 40,
+    fontFamily: "Kanit-Bold",
+    marginTop: "2%",
+    fontSize: 38,
     textAlign: "center",
+  },
+  buttonImage: {
   },
   scrollViewContent: {
     flexGrow: 1,
@@ -86,16 +109,20 @@ const styles = StyleSheet.create({
   },
   carouselItem: {
     flex: 1,
+    width: "92%",
+    height: "80%",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#98FF98",
-    borderRadius: 20,
-    marginTop: 20,
+    borderColor: "#00000",
+    borderWidth: 3,
+    borderRadius: 15,
+    marginTop: "5%",
     padding: 24,
   },
   carouselTitle: {
-    fontSize: 24,
-    marginBottom: 10,
+    marginTop: "3%",
+    fontSize: 25,
     fontWeight: "bold",
   },
   carouselContent: {
@@ -103,27 +130,27 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   navigationButtons: {
+    height: "65%",
     flexDirection: "row",
-    justifyContent: "space-between",
-    marginTop: 20,
+    justifyContent: "center",
+    marginTop: "3%",
   },
   navigationButton: {
-    backgroundColor: "#BDFF95",
-    borderRadius: 20,
-    borderWidth: 3,
-    borderColor: "#000000",
+    alignSelf: "center",
+    backgroundColor: "transparent",
     padding: 10,
     alignItems: "center",
     width: 40,
   },
   returnButton: {
+    width: "80%",
     backgroundColor: "#BDFF95",
     borderRadius: 20,
     borderWidth: 3,
     borderColor: "#000000",
     padding: 24,
     alignItems: "center",
-    marginTop: 20,
+    marginTop: "8%",
   },
 });
 

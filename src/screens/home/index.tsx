@@ -54,7 +54,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
             style={styles.start}
             onPress={redirectToCollectionPoints}
           >
-            <Text style={styles.buttontext}>Pontos de coleta</Text>
+            <Text style={styles.buttontext}>Ecopontos</Text>
           </TouchableOpacity>
           <TouchableOpacity style={styles.start} onPress={redirectToNews}>
             <Text style={styles.buttontext}>Dicas de reciclagem</Text>

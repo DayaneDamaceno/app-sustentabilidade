@@ -11,7 +11,6 @@ import {
   ScrollView,
 } from "react-native";
 import { RootStackParamList } from "../../routes";
-import { Ionicons } from "@expo/vector-icons";
 import { correctAnswer } from "../../models/answerCount";
 
 type HomeScreenProps = StackScreenProps<RootStackParamList, "Home">;

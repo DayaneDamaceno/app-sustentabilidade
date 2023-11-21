@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet, Platform, StatusBar, TouchableOpacity, ScrollView } from "react-native";
 import { StackScreenProps } from "@react-navigation/stack";
 import { RootStackParamList } from "../../routes";
 
@@ -40,29 +40,35 @@ export const TipScreen: React.FC<TipScreenProps> = ({ navigation }) => {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Dicas de reciclagem</Text>
-      <View style={styles.carouselItem}>
-        <Text style={styles.carouselTitle}>{DATA[currentIndex].title}</Text>
-        <Text style={styles.carouselContent}>{DATA[currentIndex].content}</Text>
-      </View>
-      <View style={styles.navigationButtons}>
-        <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("left")}>
-          <Text>◀️</Text>
+    <ScrollView
+      contentContainerStyle={styles.scrollViewContent}
+      scrollEnabled={true}
+    >
+     <View style={styles.container}>
+        <Text style={styles.title}>Dicas de reciclagem</Text>
+        <View style={styles.carouselItem}>
+          <Text style={styles.carouselTitle}>{DATA[currentIndex].title}</Text>
+          <Text style={styles.carouselContent}>{DATA[currentIndex].content}</Text>
+       </View>
+       <View style={styles.navigationButtons}>
+         <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("left")}>
+           <Text>◀️</Text>
+         </TouchableOpacity>
+         <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("right")}>
+           <Text>▶️</Text>
+          </TouchableOpacity>
+        </View>
+        <TouchableOpacity style={styles.returnButton} onPress={redirectToHome}>
+          <Text>Voltar para home</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("right")}>
-          <Text>▶️</Text>
-        </TouchableOpacity>
       </View>
-      <TouchableOpacity style={styles.returnButton} onPress={redirectToHome}>
-        <Text>Voltar para home</Text>
-      </TouchableOpacity>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    width: "100%",
     backgroundColor: "#EBFFDF",
     flex: 1,
     paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 55,
@@ -72,6 +78,11 @@ const styles = StyleSheet.create({
     marginTop: 12,
     fontSize: 40,
     textAlign: "center",
+  },
+  scrollViewContent: {
+    flexGrow: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
   carouselItem: {
     flex: 1,

@@ -65,20 +65,20 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ navigation }) => {
             style={styles.start}
             onPress={() => navigation.navigate("News")}
           >
-            <Text style={styles.buttontext}>Noticias</Text>
+            <Text style={styles.buttontext}>Notícias</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={styles.start}
             onPress={() => navigation.navigate("Perguntas")}
           >
-            <Text style={styles.buttontext}>Sugira perguntas</Text>
+            <Text style={styles.buttontext}>Sugerir Perguntas</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.start}
             onPress={() => navigation.navigate("Parceiros")}
           >
-            <Text style={styles.buttontext}>Seja nosso parceiro</Text>
+            <Text style={styles.buttontext}>Seja Nosso Parceiro</Text>
           </TouchableOpacity>
         </View>
       </ImageBackground>

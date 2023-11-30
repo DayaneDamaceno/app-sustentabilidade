@@ -20,18 +20,48 @@ const DATA = [
   {
     id: "1",
     title: "Dica 1",
-    content: "Conteúdo da Dica 1",
+    content: "Separe os materiais recicláveis. Isso é importante para que eles possam ser reciclados de forma correta. Os materiais recicláveis comuns incluem papel, papelão, plástico, metal, vidro e embalagens tetra pak.",
   },
   {
     id: "2",
     title: "Dica 2",
-    content: "Conteúdo da Dica 2",
+    content: "Lave e seque os materiais recicláveis. Isso ajuda a remover sujeira e resíduos, o que facilita o processo de reciclagem.",
   },
   
   {
     id: "3",
     title: "Dica 3",
-    content: "Conteúdo da Dica 3",
+    content: "Retire rótulos e adesivos. Isso também ajuda a facilitar o processo de reciclagem.",
+  },
+
+  {
+    id: "4",
+    title: "Dica 4",
+    content: "Embrulhe os materiais recicláveis. Isso ajuda a protegê-los de danos durante o transporte.",
+  },
+
+  {
+    id: "5",
+    title: "Dica 5",
+    content: "Coloque os materiais recicláveis no local correto. Verifique com a sua coleta de lixo quais são os dias e horários de coleta seletiva.",
+  },
+
+  {
+    id: "6",
+    title: "Dica 6",
+    content: "Reutilize materiais sempre que possível. Isso reduz a quantidade de resíduos que precisam ser reciclados.",
+  },
+
+  {
+    id: "7",
+    title: "Dica 7",
+    content: "Reduza o consumo de materiais descartáveis. Isso ajudará a reduzir a quantidade de resíduos que você produz.",
+  },
+
+  {
+    id: "8",
+    title: "Dica 8",
+    content: "Ensine seus pais sobre a importância da reciclagem. Eles podem ajudar a tornar a reciclagem uma parte da rotina da sua família.",
   },
 ];
 

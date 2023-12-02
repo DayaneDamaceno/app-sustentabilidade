@@ -3,8 +3,6 @@ import {
   View,
   Text,
   StyleSheet,
-  Platform,
-  StatusBar,
   Image, 
   TouchableOpacity, 
   ScrollView,
@@ -97,15 +95,15 @@ if (!fontsLoaded) {
   };
 
   return (
-    <ScrollView
-      contentContainerStyle={styles.scrollViewContent}
-      scrollEnabled={true}
-    >
-      <ImageBackground
+  <ScrollView
+    contentContainerStyle={styles.scrollViewContent}
+    scrollEnabled={true}
+      >
+    <ImageBackground
         source={require("../../../assets/Images/FundoDicas.jpeg")}
         style={styles.imageBackground}
       >
-     <View style={styles.container}>
+      <View style={styles.container}>
         <Text style={styles.title}>Dicas de reciclagem</Text>
         <Text style={styles.carouselTitle}>{DATA[currentIndex].title}</Text>
         <View style={styles.navigationButtons}>
@@ -115,34 +113,33 @@ if (!fontsLoaded) {
             style={styles.buttonImage}
          />
          </TouchableOpacity>
-         <ScrollView
-          contentContainerStyle={styles.scrollViewContent}
-          scrollEnabled={true}
-          >
             <View style={styles.carouselItem}>
-              <Text style={styles.carouselContent}>{DATA[currentIndex].content}</Text>
+              <ScrollView
+                contentContainerStyle={styles.scrollViewContent}
+                scrollEnabled={true}>
+                <Text style={styles.carouselContent}>{DATA[currentIndex].content}</Text>
+              </ScrollView>
             </View>
-          </ScrollView>
-         <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("right")}>
-         <Image
+          <TouchableOpacity style={styles.navigationButton} onPress={() => handleSwipe("right")}>
+          <Image
             source={require('../../../assets/ArrowRight.png')}
             style={styles.buttonImage}
-         />
+            />
           </TouchableOpacity>
         </View>
         <TouchableOpacity style={styles.returnButton} onPress={redirectToHome}>
           <Text>Voltar para home</Text>
         </TouchableOpacity>
       </View>
-      </ImageBackground>
-    </ScrollView>
+    </ImageBackground>
+  </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    width: "100%",
     flex: 1,
+    width: "100%",
     alignItems: "center",
     paddingHorizontal: "2%",
   },
@@ -155,7 +152,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "Kanit-Bold",
-    marginTop: "2%",
+    marginTop: "5%",
     fontSize: 38,
     textAlign: "center",
   },
@@ -167,32 +164,29 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   carouselItem: {
-    flex: 1,
-    width: "92%",
-    height: "80%",
+    width: "75%",
+    height: "90%",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "rgba(60.31, 161, 253.94, 0.90)",
     borderColor: "#00000",
     borderWidth: 3,
     borderRadius: 15,
-    marginTop: "5%",
-    padding: 24,
+    padding: 20,
   },
   carouselTitle: {
-    marginTop: "3%",
     fontSize: 25,
     fontWeight: "bold",
+    marginBottom: "5%"
   },
   carouselContent: {
     fontSize: 18,
     textAlign: "center",
   },
   navigationButtons: {
-    height: "65%",
+    height: "50%",
     flexDirection: "row",
     justifyContent: "center",
-    marginTop: "3%",
   },
   navigationButton: {
     alignSelf: "center",
@@ -203,13 +197,14 @@ const styles = StyleSheet.create({
   },
   returnButton: {
     width: "80%",
+    height: "10%",
     backgroundColor: "#A0D2FF",
     borderRadius: 20,
     borderWidth: 3,
+    marginTop: "5%",
     borderColor: "#000000",
-    padding: 24,
+    justifyContent: "center",
     alignItems: "center",
-    marginTop: "8%",
   },
 });
 

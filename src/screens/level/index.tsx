@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import React, { useState, useEffect } from "react";
 import { RootStackParamList } from "../../routes";
-import { Ionicons } from "@expo/vector-icons";
+import { correctAnswer } from "../../models/answerCount";
 import { Level } from "../../models/level";
 import * as Font from "expo-font";
 import { LinearGradient } from 'expo-linear-gradient';
@@ -42,6 +42,11 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
   if (!fontsLoaded) {
     return <Text>Loading...</Text>;
   }
+
+  function ResetCorrectAnswer() {
+    correctAnswer.count = 0
+  }
+
   return (
     <ScrollView
       contentContainerStyle={styles.scrollViewContent}
@@ -60,6 +65,7 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
               <TouchableOpacity
                 style={[styles.start, styles.greenButton]}
                 onPress={() => redirectToQuestion(Level.Easy)}
+                onPressOut={ResetCorrectAnswer}
               >
                 <Text style={styles.buttontitle}>Fácil</Text>
               </TouchableOpacity>
@@ -68,6 +74,7 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
               <TouchableOpacity
                 style={[styles.start, styles.yellowButton]}
                 onPress={() => redirectToQuestion(Level.Medium)}
+                onPressOut={ResetCorrectAnswer}
               >
                 <Text style={styles.buttontitle}>Médio</Text>
               </TouchableOpacity>
@@ -76,6 +83,7 @@ export const LevelScreen: React.FC<LevelScreenProps> = ({ navigation }) => {
               <TouchableOpacity
                 style={[styles.start, styles.redButton]}
                 onPress={() => redirectToQuestion(Level.Hard)}
+                onPressOut={ResetCorrectAnswer}
               >
                 <Text style={styles.buttontitle}>Difícil</Text>
               </TouchableOpacity>

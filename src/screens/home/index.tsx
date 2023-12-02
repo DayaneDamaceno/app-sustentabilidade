@@ -4,8 +4,6 @@ import {
   View,
   Text,
   StyleSheet,
-  Platform,
-  StatusBar,
   TouchableOpacity,
   ImageBackground,
   ScrollView,
